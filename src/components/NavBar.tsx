@@ -103,33 +103,6 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Values Banner */}
-      <div className="bg-gray-50 border-b border-gray-200 py-3 mt-20">
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="flex justify-center items-center flex-wrap gap-4">
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Authenticité
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Respect
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Partage
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Complicité
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Bienveillance
-            </span>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

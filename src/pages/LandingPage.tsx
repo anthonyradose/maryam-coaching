@@ -1,6 +1,5 @@
 import NavBar from '../components/NavBar';
 import HeroSection from '../components/HeroSection';
-import Banner from '../components/Banner';
 import SellingPointsBanner from '../components/SellingPointsBanner';
 import WhySection from '../components/WhySection';
 import HowToFixSection from '../components/HowToFixSection';
@@ -14,7 +13,6 @@ const LandingPage = () => {
     <div>
       <NavBar />
       <HeroSection />
-      <Banner />
       <SellingPointsBanner />
       <WhySection />
       <HowToFixSection />
