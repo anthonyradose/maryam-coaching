@@ -9,23 +9,23 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto px-8">
           <div className="flex justify-center items-center flex-wrap gap-4">
             <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Authenticité
+              [Value 1]
             </span>
             <span className="text-gray-400 font-bold">•</span>
             <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Respect
+              [Value 2]
             </span>
             <span className="text-gray-400 font-bold">•</span>
             <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Partage
+              [Value 3]
             </span>
             <span className="text-gray-400 font-bold">•</span>
             <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Complicité
+              [Value 4]
             </span>
             <span className="text-gray-400 font-bold">•</span>
             <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              Bienveillance
+              [Value 5]
             </span>
           </div>
         </div>
@@ -39,23 +39,26 @@ const HeroSection = () => {
             <div className="space-y-8">
               {/* Main Title */}
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Transformez votre vie de couple
-                <span className="text-red-500"> avec confiance</span>
+                [Main title about couple coaching]
+                <span className="text-red-500"> [with emphasis]</span>
               </h1>
 
               {/* Subtitle */}
               <p className="text-xl text-gray-600 leading-relaxed">
-                Accompagnement personnalisé pour retrouver l'harmonie, 
-                la complicité et la communication dans votre relation.
+                [Subtitle describing the service and benefits of couple coaching - approximately 2-3 lines of text]
               </p>
 
               {/* Sale Line */}
-              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
-                <p className="text-red-700 font-semibold text-lg">
-                  🎯 Offre spéciale : Première consultation à -50%
-                </p>
-              </div>
 
+              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+
+                <p className="text-red-700 font-semibold text-lg">
+
+              [Sale line text]
+
+                </p>
+
+              </div>
               {/* Main CTA Button */}
               <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
                 Démarrez maintenant !
@@ -63,7 +66,7 @@ const HeroSection = () => {
 
               {/* Booking Buttons */}
               <div className="space-y-4">
-                <p className="text-gray-700 font-medium text-lg">Réservez votre consultation :</p>
+                <p className="text-gray-700 font-medium text-lg">[Text introducing booking options]</p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   {/* In-Office Booking Button */}
@@ -73,7 +76,7 @@ const HeroSection = () => {
                     </div>
                     <div className="text-left">
                       <div className="font-semibold text-blue-700">Book Now</div>
-                      <div className="text-sm text-blue-600">Prendre RDV en cabinet</div>
+                      <div className="text-sm text-blue-600">prendre rdv en cabinet</div>
                     </div>
                   </button>
 
@@ -84,7 +87,7 @@ const HeroSection = () => {
                     </div>
                     <div className="text-left">
                       <div className="font-semibold text-green-700">Book Now</div>
-                      <div className="text-sm text-green-600">Prendre RDV en ligne</div>
+                      <div className="text-sm text-green-600">prendre RDV en ligne</div>
                     </div>
                   </button>
                 </div>
@@ -94,12 +97,12 @@ const HeroSection = () => {
             {/* Right Column - Photo */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                {/* Placeholder for Maryam's photo */}
+                {/* Placeholder for Photo */}
                 <div className="w-80 h-96 bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center">
                   <div className="text-center text-gray-500">
                     <div className="text-6xl mb-4">👩‍⚕️</div>
-                    <p className="text-lg font-medium">Photo de Maryam</p>
-                    <p className="text-sm">À remplacer par une vraie photo</p>
+                    <p className="text-lg font-medium">[Maryam's Photo]</p>
+                    <p className="text-sm">[Professional portrait]</p>
                   </div>
                 </div>
                 

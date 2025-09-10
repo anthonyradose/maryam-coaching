@@ -6,19 +6,19 @@ const GoogleReviews = () => {
         <div className="text-center mb-16">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-500 mb-2">500+</div>
+              <div className="text-4xl font-bold text-red-500 mb-2">[Number]</div>
               <div className="text-gray-600">Couples accompagnés</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-500 mb-2">95%</div>
+              <div className="text-4xl font-bold text-red-500 mb-2">[%]</div>
               <div className="text-gray-600">Taux de satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-500 mb-2">4.9/5</div>
+              <div className="text-4xl font-bold text-red-500 mb-2">[Rating]</div>
               <div className="text-gray-600">Note moyenne</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-500 mb-2">5+</div>
+              <div className="text-4xl font-bold text-red-500 mb-2">[Years]</div>
               <div className="text-gray-600">Années d'expérience</div>
             </div>
           </div>
@@ -43,11 +43,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Maryam nous a aidé à retrouver la complicité que nous avions perdue. 
-              Ses conseils pratiques et son approche bienveillante ont transformé notre relation."
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Sophie & Marc
+              - [Customer Names]
             </div>
           </div>
 
@@ -60,11 +59,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Un accompagnement professionnel et humain. Nous avons appris à mieux communiquer 
-              et notre relation n'a jamais été aussi forte."
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Julie & Thomas
+              - [Customer Names]
             </div>
           </div>
 
@@ -77,11 +75,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Grâce à Maryam, nous avons pu surmonter nos difficultés et construire 
-              une relation basée sur la confiance et le respect mutuel."
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Amélie & David
+              - [Customer Names]
             </div>
           </div>
 
@@ -94,11 +91,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Des séances qui ont changé notre vie. L'approche de Maryam est à la fois 
-              professionnelle et chaleureuse. Je recommande vivement !"
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Caroline & Pierre
+              - [Customer Names]
             </div>
           </div>
 
@@ -111,11 +107,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Nous étions au bord de la rupture. Aujourd'hui, nous sommes plus unis que jamais. 
-              Merci Maryam pour votre aide précieuse."
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Emma & Julien
+              - [Customer Names]
             </div>
           </div>
 
@@ -128,11 +123,10 @@ const GoogleReviews = () => {
               <span className="ml-2 text-sm text-gray-500">Google</span>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "Un coaching de couple exceptionnel. Maryam nous a donné les clés pour 
-              une communication saine et une intimité retrouvée."
+              "[Customer review testimonial about their experience with couple coaching]"
             </p>
             <div className="text-sm font-semibold text-gray-900">
-              - Léa & Antoine
+              - [Customer Names]
             </div>
           </div>
         </div>

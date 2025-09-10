@@ -13,65 +13,56 @@ const HowToFixSection = () => {
 
         {/* Main Content */}
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xl text-gray-700 leading-relaxed mb-8">
-            Chaque couple traverse des défis, mais avec les bonnes méthodes et un accompagnement professionnel, 
-            il est possible de retrouver l'harmonie et de construire une relation plus forte que jamais.
+          <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            [Small text introducing the process - explanation of how the coaching works]
           </p>
 
-          {/* Process Steps */}
+          {/* 3-Step Process */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Step 1 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-red-500 text-2xl font-bold">1</span>
+              <div className="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                1
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Évaluation
-              </h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">[Step 1 Title]</h3>
               <p className="text-gray-600">
-                Comprendre vos défis spécifiques et identifier les points d'amélioration
+                [Description of first step in the process]
               </p>
             </div>
 
             {/* Step 2 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-blue-500 text-2xl font-bold">2</span>
+              <div className="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                2
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Plan d'action
-              </h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">[Step 2 Title]</h3>
               <p className="text-gray-600">
-                Développer des stratégies personnalisées adaptées à votre situation
+                [Description of second step in the process]
               </p>
             </div>
 
             {/* Step 3 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-green-500 text-2xl font-bold">3</span>
+              <div className="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                3
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Transformation
-              </h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">[Step 3 Title]</h3>
               <p className="text-gray-600">
-                Mettre en pratique et voir votre relation s'épanouir durablement
+                [Description of third step in the process]
               </p>
             </div>
           </div>
 
-          {/* Additional Text */}
+          {/* Additional motivational text */}
           <div className="bg-gray-50 p-8 rounded-xl mb-8">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>La solution existe.</strong> Avec une approche structurée et bienveillante, 
-              nous travaillons ensemble pour vous donner les outils nécessaires à une relation épanouie. 
-              Chaque séance vous rapproche de la complicité que vous désirez retrouver.
+              [Motivational text about the solution and working together - builds confidence]
             </p>
           </div>
 
-          {/* CTA Button - Same as Hero */}
-          <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
-            Démarrez maintenant !
+          {/* CTA Button */}
+          <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg">
+            Démarrez maintenant!
           </button>
         </div>
       </div>
