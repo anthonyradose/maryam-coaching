@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
-/* Smooth scrolling for the entire document */
-html {
-  scroll-behavior: smooth;
+@layer base {
+  /* Set Inter as default for everything */
+  html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Mulish for all headings automatically */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Mulish", sans-serif;
+  }
 }
