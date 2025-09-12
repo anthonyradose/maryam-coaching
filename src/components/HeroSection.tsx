@@ -3,33 +3,6 @@ const HeroSection = () => {
   return (
     <section>
       {/* Hero content */}
-      
-       {/* Values Banner */}
-      <div className="bg-gray-50 border-b border-gray-200 py-3 mt-20">
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="flex justify-center items-center flex-wrap gap-4">
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              [Value 1]
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              [Value 2]
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              [Value 3]
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              [Value 4]
-            </span>
-            <span className="text-gray-400 font-bold">•</span>
-            <span className="text-red-500 text-sm font-medium px-3 py-1 bg-red-50 rounded-full border border-red-200">
-              [Value 5]
-            </span>
-          </div>
-        </div>
-      </div>
 
       {/* Main Hero Section */}
       <div className="bg-white py-16">

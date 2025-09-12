@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-pink-light: #FFD0E2;
+  --color-pink: #FF3EA5;
+  --color-white: #FFFFFF;
+  --color-gray-light: #DEDCDD;
+  --color-dark: #393D47;
+}
+
 @layer base {
-  /* Set Inter as default for everything */
   html {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
   }
-  
-  /* Mulish for all headings automatically */
   h1, h2, h3, h4, h5, h6 {
     font-family: "Mulish", sans-serif;
   }
