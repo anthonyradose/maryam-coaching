@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+  /* Custom Colors: */
   --color-pink-light: #FFD0E2;
   --color-pink: #FF3EA5;
   --color-white: #FFFFFF;
   --color-gray-light: #DEDCDD;
   --color-dark: #393D47;
+  /* Custom Breakpoints: */
+  --breakpoint-bp375: 23.4375rem; /* 375px */
+  --breakpoint-bp425: 26.5625rem; /* 425px */
+  --breakpoint-bp1440: 90rem;     /* 1440px */
 }
 
 @layer base {
