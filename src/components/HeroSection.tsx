@@ -1,90 +1,80 @@
+import { Mail, Sofa } from 'lucide-react';
+
 // Hero section: Main title, subtitle, CTA, sale line, buttons, photo
 const HeroSection = () => {
   return (
-    <section>
-      {/* Hero content */}
+    <section className="lg:mt-28 lg:h-[calc(100vh-7rem)]">
+   <div className="grid lg:grid-cols-2 items-stretch h-full ">
 
-      {/* Main Hero Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
-              {/* Main Title */}
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                [Main title about couple coaching]
-                <span className="text-red-500"> [with emphasis]</span>
-              </h1>
+        {/* Left Column - Content */}
+        <div className="flex flex-col justify-evenly px-4 sm:px-8 md:px-12 lg:px-20 py-8 sm:py-12 lg:py-20">
+          {/* Main Title */}
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-pink leading-tight my-6 mx-3">
+            Ravivez la flamme et la passion dans votre couple
+            {/* <span className="text-pink"> [with emphasis]</span> */}
+          </h1>
 
-              {/* Subtitle */}
-              <p className="text-xl text-gray-600 leading-relaxed">
-                [Subtitle describing the service and benefits of couple coaching - approximately 2-3 lines of text]
-              </p>
+          {/* Subtitle */}
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed my-2 mx-3">
 
-              {/* Sale Line */}
+            Redécouvrez le plaisir d’être ensemble, cœur à cœur, corps à corps
+            avec Maryam Caillon - Sexologue et thérapeute de couple à Versailles
+            et en ligne
+          </p>
 
-              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+          {/* Main CTA Button */}
+       <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-pink leading-tight my-4 mx-3">
 
-                <p className="text-red-700 font-semibold text-lg">
+            Démarrez maintenant !
+          </h2>
 
-              [Sale line text]
-
-                </p>
-
-              </div>
-              {/* Main CTA Button */}
-              <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
-                Démarrez maintenant !
-              </button>
-
-              {/* Booking Buttons */}
-              <div className="space-y-4">
-                <p className="text-gray-700 font-medium text-lg">[Text introducing booking options]</p>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  {/* In-Office Booking Button */}
-                  <button className="flex items-center justify-center space-x-3 bg-blue-50 hover:bg-blue-100 border-2 border-blue-200 rounded-lg p-4 transition-colors duration-200 flex-1">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">🛋️</span>
-                    </div>
-                    <div className="text-left">
-                      <div className="font-semibold text-blue-700">Book Now</div>
-                      <div className="text-sm text-blue-600">prendre rdv en cabinet</div>
-                    </div>
-                  </button>
-
-                  {/* Online Booking Button */}
-                  <button className="flex items-center justify-center space-x-3 bg-green-50 hover:bg-green-100 border-2 border-green-200 rounded-lg p-4 transition-colors duration-200 flex-1">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">📧</span>
-                    </div>
-                    <div className="text-left">
-                      <div className="font-semibold text-green-700">Book Now</div>
-                      <div className="text-sm text-green-600">prendre RDV en ligne</div>
-                    </div>
-                  </button>
+          {/* Booking Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 items-stretch space-y">
+              {/* In-Office Booking Button */}
+              <button className="text-base sm:text-lg md:text-xl inline-flex flex-row items-center justify-center bg-pink hover:bg-pink-light  transition-colors duration-200 w-48 p-2 sm:p-3 md:p-4 gap-x-2 mx-3">
+                <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0">
+             
+                     <Sofa className="text-white text-sm sm:text-base md:text-lg" />
                 </div>
-              </div>
-            </div>
-
-            {/* Right Column - Photo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Placeholder for Photo */}
-                <div className="w-80 h-96 bg-gray-200 rounded-2xl shadow-2xl flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">👩‍⚕️</div>
-                    <p className="text-lg font-medium">[Maryam's Photo]</p>
-                    <p className="text-sm">[Professional portrait]</p>
+                <div className="flex flex-col text-left">
+                  <div className="font-semibold text-white text-xs sm:text-sm md:text-base leading-tight">Book Now</div>
+                  <div className="text-xs sm:text-sm md:text-base text-white leading-tight">
+                    prendre rdv en cabinet
                   </div>
                 </div>
-                
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-red-500 rounded-full opacity-20"></div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-500 rounded-full opacity-20"></div>
-              </div>
+              </button>
+
+              {/* Online Booking Button */}
+              <button className="text-base sm:text-lg md:text-xl inline-flex flex-row items-center justify-center bg-pink hover:bg-pink-light  transition-colors duration-200 w-48 p-2 sm:p-3 md:p-4 gap-x-2 mx-3">
+                <div className="w-8 h-8 bg-pink rounded-full flex items-center justify-center shrink-0">
+         
+                      <Mail className="text-white text-sm sm:text-base md:text-lg" />
+                </div>
+                <div className="flex flex-col text-left">
+                  <div className="font-semibold text-white text-xs sm:text-sm md:text-base leading-tight">Book Now</div>
+                  <div className="text-xs sm:text-sm md:text-base text-white leading-tight">
+                    prendre RDV en ligne
+                  </div>
+                </div>
+              </button>
             </div>
-          </div>
+        </div>
+        {/* Right Column - Photo */}
+        <div className="relative">
+          <div className="w-28 h-14 bg-white absolute top-0 left-0 z-20 rounded-br-2xl | lg:hidden | dark:bg-grayDark-600">
+
+
+<svg className="w-10 h-10 text-white fill-current absolute bottom-px -left-px z-30 transform translate-y-full dark:text-grayDark-600" viewBox="0 0 100 100"><path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" /></svg>
+<svg className="w-10 h-10 text-white fill-current absolute -top-px right-px z-30 transform translate-x-full dark:text-grayDark-600" viewBox="0 0 100 100"><path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" /></svg>
+
+
+
+</div>
+          <img
+            className="w-full h-full object-cover"
+            src="../../public/images/DSC02294.JPG"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -92,3 +82,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

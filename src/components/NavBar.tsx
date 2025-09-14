@@ -119,7 +119,7 @@ const NavBar = () => {
           </div>
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <a href="#rdv" className=" text-white px-6 py-3 font-normal ">
+            <a href="#rdv" className=" text-white px-6 py-3 font-normal tracking-[0.2rem]">
               Prendre RDV
             </a>
           </div>
@@ -139,10 +139,12 @@ const NavBar = () => {
             />
           </button>
         </div>
-
+{isMenuOpen && (
+  <div className="fixed inset-0 z-51 bg-black opacity-50 backdrop-blur-sm lg:hidden "></div>
+)}
         {/* Mobile Menu */}
         <div
-          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full h-full z-55 lg:hidden bg-gray-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
+          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full sm:w-auto h-full z-55 lg:hidden bg-gray-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
             isMenuOpen
               ? "   translate-x-0 opacity-100 duration-300"
               : " -translate-x-full opacity-0 duration-300"
