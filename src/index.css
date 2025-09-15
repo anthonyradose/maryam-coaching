@@ -22,3 +22,8 @@
     font-family: "Mulish", sans-serif;
   }
 }
+
+/* Custom utility for SVG offset */
+.top-spacing-neg-7 {
+  top: calc(var(--spacing) * -7);
+}
