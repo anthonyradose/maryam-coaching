@@ -8,48 +8,34 @@ const HeroSection = () => {
         {/* Left Column - Content */}
         <div className="flex flex-col justify-center items-start px-4 sm:px-8 md:px-12  py-8 sm:py-12 lg:py-0 h-full ml-4">
           {/* Main Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-7xl font-light text-pink leading-tight mb-6 lg:text-left max-w-2xl lg:max-w-xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-7xl font-normal text-pink leading-tight mb-6 lg:text-left max-w-2xl lg:max-w-xl tracking-widest">
             Ravivez la flamme et la passion dans votre couple
           </h1>
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-4  lg:text-left max-w-xl font-light">
             Redécouvrez le plaisir d’être ensemble, cœur à cœur, corps à corps
-            avec Maryam Caillon - Sexologue et thérapeute de couple à Versailles
-            et en ligne
+            avec <span className="font-medium text-pink">Maryam Caillon</span> -
+            Sexologue et thérapeute de couple à Versailles et en ligne.
           </p>
           {/* Main CTA Button */}
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-normal text-pink leading-tight mb-6 text-center lg:text-left">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold text-pink leading-tight mb-6 text-center lg:text-left tracking-wide">
             Démarrez maintenant !
           </h2>
           {/* Booking Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
+          <div className="flex  sm:flex-row gap-4 items-center lg:items-start">
             {/* In-Office Booking Button */}
-            <button className="text-base sm:text-lg md:text-xl inline-flex flex-row items-center justify-center bg-white border-3 border-pink hover:bg-pink-light transition-colors duration-200 w-48 lg:w-50 p-2  gap-x-2">
-              <div className="w-8 h-8 bg-pink rounded-full flex items-center justify-center shrink-0">
-                <Sofa className="text-white text-lg lg:text-2xl" />
-              </div>
-              <div className="flex flex-col text-left">
-                <div className="font-normal text-gray-700 text-xs sm:text-sm md:text-base leading-tight tracking-[0.1rem]">
-                  Book Now
-                </div>
-                <div className="text-xs sm:text-sm md:text-base text-gray-700 leading-tight font-light">
-                  prendre RDV en cabinet
-                </div>
-              </div>
+            <button className="w-[5.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[8.5rem] aspect-square rounded-full flex flex-col items-center justify-center  bg-pink border-2 border-pink hover:bg-white transition-colors duration-200 lg:gap-1.5">
+              <Sofa className="text-white  md:w-7 h-7 lg:w-8 h-8 xl:w-10 h-10" />
+              <p className="text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] text-white text-center leading-tight font-bold">
+                prendre RDV en cabinet
+              </p>
             </button>
             {/* Online Booking Button */}
-            <button className="text-base sm:text-lg md:text-xl inline-flex flex-row items-center justify-center bg-white border-3 border-pink hover:bg-pink-light transition-colors duration-200 w-48 lg:w-50 p-2  gap-x-2">
-              <div className="w-8 h-8 bg-pink rounded-full flex items-center justify-center shrink-0">
-                <Mail className="text-white text-lg lg:text-2xl" />
-              </div>
-              <div className="flex flex-col text-left">
-                <div className="font-normal text-gray-700 text-xs sm:text-sm md:text-base leading-tight tracking-[0.1rem]">
-                  Book Now
-                </div>
-                <div className="text-xs sm:text-sm md:text-base text-gray-700 leading-tight font-light">
-                  prendre RDV en ligne
-                </div>
-              </div>
+  <button className="w-[5.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[8.5rem] aspect-square rounded-full flex flex-col items-center justify-center  bg-pink border-2 border-pink hover:bg-white transition-colors duration-200 lg:gap-1.5">
+              <Mail className="text-white  md:w-7 h-7 lg:w-8 h-8 xl:w-10 h-10" />
+              <p className="text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] text-white text-center leading-tight font-bold">
+                prendre RDV en ligne
+              </p>
             </button>
           </div>
         </div>
@@ -61,7 +47,7 @@ const HeroSection = () => {
               src="../../public/images/DSC02294.JPG"
               alt="Maryam Caillon portrait"
             />
-                     <svg
+            <svg
               className="absolute lg:hidden top-spacing-neg-7 left-0 w-full h-full pointer-events-none"
               viewBox="0 0 600 900"
               preserveAspectRatio="none"
@@ -69,7 +55,7 @@ const HeroSection = () => {
               <use xlinkHref="../../public/images/wave-haikei-sm.svg" />
             </svg>
             <svg
-              className="absolute hidden lg:block top-0 left-0 w-full h-full pointer-events-none"
+              className="absolute hidden lg:block top-0 left-spacing-neg-27 lg:left-spacing-neg-18 bp1440:left-spacing-neg-17 w-full h-full pointer-events-none"
               viewBox="0 0 900 600"
               preserveAspectRatio="none"
             >

@@ -27,3 +27,76 @@
 .top-spacing-neg-7 {
   top: calc(var(--spacing) * -7);
 }
+.left-spacing-neg-27 {
+  left: calc(var(--spacing) * -27);
+}
+.left-spacing-neg-18 {
+  left: calc(var(--spacing) * -18);
+}
+.left-spacing-neg-17 {
+  left: calc(var(--spacing) * -17);
+}
+
+
+/* Media Queries for testing: */
+/* chrome mobile s: */
+
+@media (min-width: 320px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* chrome mobile m: */
+@media (min-width: 375px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* chrome mobile l: */
+@media (min-width: 425px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* tailwind xs: */
+@media (min-width: 640px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* both md: */
+@media (min-width: 768px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* both lg: */
+@media (min-width: 1024px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+  /* tailwind xl: */
+@media (min-width: 1280px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* both laptop l: */
+@media (min-width: 1440px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* tailwind 2xl: */
+@media (min-width: 1536px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* chrome 4k: */
+@media (min-width: 2560px) {
+  body {
+    outline: 3px solid red;
+  }
+}
