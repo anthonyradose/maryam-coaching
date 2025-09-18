@@ -12,7 +12,9 @@
   --breakpoint-bp425: 26.5625rem; /* 425px */
   --breakpoint-bp1440: 90rem;     /* 1440px */
 }
-
+*{
+  outline: 3px solid black;
+}
 @layer base {
   html {
     font-family: "Inter", sans-serif;
@@ -99,4 +101,9 @@
   body {
     outline: 3px solid red;
   }
+}
+
+.mobile-menu-links:has(.mobile-menu-dropdown:hover) ~ .cta-div,
+.mobile-menu-links:has(.mobile-menu-dropdown:focus-within) ~ .cta-div {
+  margin-top: 0.5rem !important; /* mt-2 */
 }

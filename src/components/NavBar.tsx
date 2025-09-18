@@ -45,19 +45,19 @@ const NavBar = () => {
       {/* Navbar */}
       <nav className="sticky top-0 left-0 right-0 bg-pink z-50">
         <div className="flex flex-row-reverse lg:flex-row justify-between items-center ml-4 px-4 py-4">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 lg:ml-8">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a
                 href="#accueil"
-                className="text-2xl font-bold text-white hover:text-gray-light transition-colors"
+                className="text-2xl font-bold text-white hover:text-gray-light transition-colors md:mr-4"
               >
                 MC
               </a>
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
               <a
                 href="#accueil"
                 className="text-white hover:text-gray-light font-light transition-colors duration-300"
@@ -119,7 +119,10 @@ const NavBar = () => {
           </div>
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <a href="#rdv" className=" text-white px-6 py-3 font-normal tracking-[0.2rem]">
+            <a
+              href="#rdv"
+              className=" rounded-4xl bg-white text-dark px-6 py-3 font-normal tracking-[0.2rem] border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
+            >
               Prendre RDV
             </a>
           </div>
@@ -127,7 +130,7 @@ const NavBar = () => {
           {/* Mobile Menu Open Button */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors"
+            className="lg:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors sm:ml-4 md:ml-8"
             aria-label="Toggle menu"
           >
             <div className={`w-6 h-0.5 bg-white transition-all duration-300`} />
@@ -139,12 +142,12 @@ const NavBar = () => {
             />
           </button>
         </div>
-{isMenuOpen && (
-  <div className="fixed inset-0 z-51 bg-black opacity-50 backdrop-blur-sm lg:hidden "></div>
-)}
+        {isMenuOpen && (
+          <div className="fixed inset-0 z-51 bg-black opacity-50 backdrop-blur-sm lg:hidden "></div>
+        )}
         {/* Mobile Menu */}
         <div
-          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full sm:w-auto h-full z-55 lg:hidden bg-gray-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
+          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full sm:w-auto h-full z-55 lg:hidden bg-pink-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
             isMenuOpen
               ? "   translate-x-0 opacity-100 duration-300"
               : " -translate-x-full opacity-0 duration-300"
@@ -172,71 +175,73 @@ const NavBar = () => {
               }`}
             />
           </button>
-          <div className="flex flex-col w-full space-y-8 mt-8">
-          <a
-            href="#accueil"
-            className="block py-2 text-gray-700 w-full font-sm transition-colors tracking-[0.2rem]"
-          >
-            Accueil
-          </a>
-          <a
-            href="#qui-suis-je"
-            className="block py-2 text-gray-700 w-full font-sm  transition-colors tracking-[0.2rem]"
-          >
-            Qui suis-je ?
-          </a>
+          <div className="flex flex-col w-full space-y-8 mobile-menu-links">
+            <a
+              href="#accueil"
+              className="block py-2 text-dark w-full transition-colors tracking-[0.2rem]"
+            >
+              Accueil
+            </a>
+            <a
+              href="#qui-suis-je"
+              className="block py-2 text-dark w-full  transition-colors tracking-[0.2rem]"
+            >
+              Qui suis-je ?
+            </a>
 
-          {/* Dropdown */}
-          <div className="group w-full font-sm  py-2">
-            <button className="text-black font-light transition-colors duration-300 w-full justify-between flex items-center tracking-[0.2rem]">
-              Les suivis proposés
-              <svg
-                className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <div className=" w-full hidden group-hover:block bg-pink-light    transition-all duration-300">
-              <a
-                href="#therapie-couple"
-                className="block px-4 py-3 text-gray-700  transition-colors tracking-[0.2rem]"
-              >
-                Thérapie de couple
-              </a>
-              <a
-                href="#sexotherapie"
-                className="block px-4 py-3 text-gray-700  transition-colors tracking-[0.2rem]"
-              >
-                Sexothérapie
-              </a>
+            {/* Dropdown */}
+            <div className="group w-full   py-2 mobile-menu-dropdown">
+              <button className="text-dark transition-colors duration-300  justify-between flex items-center tracking-[0.2rem]">
+                Les suivis proposés
+                <svg
+                  className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div className=" w-full hidden group-hover:block bg-pink-light    transition-all duration-300">
+                <a
+                  href="#therapie-couple"
+                  className="block px-4 py-3 text-dark transition-colors tracking-[0.2rem]"
+                >
+                  Thérapie de couple
+                </a>
+                <a
+                  href="#sexotherapie"
+                  className="block px-4 py-3 text-dark  transition-colors tracking-[0.2rem]"
+                >
+                  Sexothérapie
+                </a>
+              </div>
             </div>
-          </div>
 
-          <a
-            href="#blog"
-            className="block py-2 text-gray-700 w-full  font-sm  transition-colors tracking-[0.2rem] "
-          >
-            Blog
-          </a>
-          <a
-            href="#contact"
-            className="block py-2 text-gray-700 w-full  font-sm transition-colors tracking-[0.2rem]"
-          >
-            Contact
-          </a>
-</div>
-          <a
-            href="#rdv"
-            className=" w-full text-gray-700  font-medium   transition-colors text-center tracking-[0.2rem]"
-          >
-            Prendre RDV
-          </a>
+            <a
+              href="#blog"
+              className="block py-2 text-dark w-full   transition-colors tracking-[0.2rem] "
+            >
+              Blog
+            </a>
+            <a
+              href="#contact"
+              className="block py-2 text-dark w-full  transition-colors tracking-[0.2rem]"
+            >
+              Contact
+            </a>
+          </div>
+          <div className="w-full text-center cta-div mt-8">
+            <a
+              href="#rdv"
+              className=" w-auto  font-medium   transition-colors text-center tracking-[0.2rem] bg-white p-4 rounded-4xl "
+            >
+              Prendre RDV
+            </a>
+          </div>
         </div>
       </nav>
     </>
