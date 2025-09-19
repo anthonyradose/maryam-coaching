@@ -12,9 +12,9 @@
   --breakpoint-bp425: 26.5625rem; /* 425px */
   --breakpoint-bp1440: 90rem;     /* 1440px */
 }
-*{
+/* *{
   outline: 3px solid black;
-}
+} */
 @layer base {
   html {
     font-family: "Inter", sans-serif;
@@ -96,14 +96,24 @@
     outline: 3px solid red;
   }
 }
-/* chrome 4k: */
-@media (min-width: 2560px) {
-  body {
-    outline: 3px solid red;
-  }
-}
+
 
 .mobile-menu-links:has(.mobile-menu-dropdown:hover) ~ .cta-div,
 .mobile-menu-links:has(.mobile-menu-dropdown:focus-within) ~ .cta-div {
   margin-top: 0.5rem !important; /* mt-2 */
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 40s linear infinite;
+}
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
 }

@@ -18,29 +18,18 @@ const NavBar = () => {
   return (
     <>
       {/* Values Banner */}
-      <div className="bg-pink-light  py-3">
-        <div className="flex justify-center items-center ">
-          <span className="text-white text-xs sm:text-sm md:text-base font-normal  bp375:px-1 bp425:px-2 sm:px-3 py-1">
-            authenticité
-          </span>
-          <span className="text-white font-thin">|</span>
-          <span className="text-white text-xs sm:text-sm md:text-base font-normal  bp375:px-1 bp425:px-2 sm:px-3 py-1">
-            respect
-          </span>
-          <span className="text-white font-thin">|</span>
-          <span className="text-white text-xs sm:text-sm md:text-base font-normal bp375:px-1 bp425:px-2 sm:px-3  py-1">
-            partage
-          </span>
-          <span className="text-white font-thin">|</span>
-          <span className="text-white text-xs sm:text-sm md:text-base font-normal  bp375:px-1 bp425:px-2 sm:px-3 py-1">
-            complicite
-          </span>
-          <span className="text-white font-thin">|</span>
-          <span className="text-white text-xs sm:text-sm md:text-base font-normal bp375:px-1 bp425:px-2 sm:px-3  py-1">
-            bienveillance
-          </span>
-        </div>
-      </div>
+   <div className="bg-pink-light marquee-wrapper">
+  <div className="marquee py-3 ">
+    {Array(8).fill(['authenticité', 'respect', 'partage', 'complicite', 'bienveillance']).flat().map((value, idx) => (
+      <span
+        key={value + idx}
+        className=" text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-light px-3 "
+      >
+        {value}
+      </span>
+    ))}
+  </div>
+</div>
 
       {/* Navbar */}
       <nav className="sticky top-0 left-0 right-0 bg-pink z-50">
