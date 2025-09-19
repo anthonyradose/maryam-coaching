@@ -24,17 +24,17 @@ const HeroSection = () => {
           {/* Booking Buttons */}
           <div className="flex  sm:flex-row gap-4 items-center lg:items-start">
             {/* In-Office Booking Button */}
-            <button className="w-[5.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[8.5rem] aspect-square rounded-full flex flex-col items-center justify-center  bg-pink border-2 border-pink hover:bg-white transition-colors duration-200 lg:gap-1.5">
-              <Sofa className="text-white  md:w-7 h-7 lg:w-8 h-8 xl:w-10 h-10" />
-              <p className="text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] text-white text-center leading-tight font-bold">
-                prendre RDV en cabinet
+            <button className="w-[7rem] bp375:w-[8rem] sm:w-[9rem] md:w-[10rem] rounded-4xl flex items-center justify-center  bg-pink border-2 border-pink space-x-2 p-[0.5rem] hover:bg-white transition-colors duration-200 lg:gap-1.5">
+              <Sofa className="text-white sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] xl:w-[32px] xl:h-[32px]" />
+              <p className="text-[0.7rem] bp375:text-[0.8rem] sm:text-[0.9rem]  xl:[text-[1rem] text-white text-center leading-tight font-bold">
+                en cabinet
               </p>
             </button>
             {/* Online Booking Button */}
-  <button className="w-[5.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[8.5rem] aspect-square rounded-full flex flex-col items-center justify-center  bg-pink border-2 border-pink hover:bg-white transition-colors duration-200 lg:gap-1.5">
-              <Mail className="text-white  md:w-7 h-7 lg:w-8 h-8 xl:w-10 h-10" />
-              <p className="text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] text-white text-center leading-tight font-bold">
-                prendre RDV en ligne
+               <button className="w-[7rem] bp375:w-[8rem] sm:w-[9rem] md:w-[10rem] rounded-4xl flex items-center justify-center  bg-pink border-2 border-pink space-x-2 p-[0.5rem] hover:bg-white transition-colors duration-200 lg:gap-1.5">
+              <Mail className="text-white sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] xl:w-[32px] xl:h-[32px]" />
+              <p className="text-[0.7rem] bp375:text-[0.8rem] sm:text-[0.9rem]  xl:[text-[1rem] text-white text-center leading-tight font-bold">
+                en ligne
               </p>
             </button>
           </div>
