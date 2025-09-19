@@ -18,18 +18,27 @@ const NavBar = () => {
   return (
     <>
       {/* Values Banner */}
-   <div className="bg-pink-light marquee-wrapper">
-  <div className="marquee py-3 ">
-    {Array(8).fill(['authenticité', 'respect', 'partage', 'complicite', 'bienveillance']).flat().map((value, idx) => (
-      <span
-        key={value + idx}
-        className=" text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-light px-3 "
-      >
-        {value}
-      </span>
-    ))}
-  </div>
-</div>
+      <div className="bg-pink-light marquee-wrapper">
+        <div className="marquee py-3 ">
+          {Array(8)
+            .fill([
+              "authenticité",
+              "respect",
+              "partage",
+              "complicite",
+              "bienveillance",
+            ])
+            .flat()
+            .map((value, idx) => (
+              <span
+                key={value + idx}
+                className=" text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-light px-3 "
+              >
+                {value}
+              </span>
+            ))}
+        </div>
+      </div>
 
       {/* Navbar */}
       <nav className="sticky top-0 left-0 right-0 bg-pink z-50">
@@ -39,9 +48,13 @@ const NavBar = () => {
             <div className="flex-shrink-0">
               <a
                 href="#accueil"
-                className="text-2xl font-bold text-white hover:text-gray-light transition-colors md:mr-4"
+                className="mr-[2rem"
               >
-                MC
+                <img
+                  src="/src/assets/temp-logo.svg"
+                  alt="Maryam Coaching Logo"
+                  className="h-10 w-auto max-h-12 object-contain drop-shadow-sm"
+                />
               </a>
             </div>
 
