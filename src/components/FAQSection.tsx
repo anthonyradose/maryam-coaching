@@ -45,13 +45,13 @@ const FAQSection = () => {
 
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-8">
+      <div className=" mx-auto px-8 sm:px-12 md:px-16">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Questions Fréquentes
           </h2>
-          <div className="w-24 h-1 bg-red-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-pink mx-auto rounded-full"></div>
           <p className="text-xl text-gray-600 mt-6">
             [Subtitle explaining this FAQ section helps answer common questions]
           </p>
@@ -62,7 +62,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
               <button
-                className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-inset"
+                className="w-full text-left p-6 "
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between items-center">
@@ -71,7 +71,7 @@ const FAQSection = () => {
                   </h3>
                   <div className="flex-shrink-0">
                     <svg
-                      className={`w-6 h-6 text-red-500 transform transition-transform duration-200 ${
+                      className={`w-6 h-6 text-pink transform transition-transform duration-200 ${
                         openFAQ === index ? 'rotate-180' : ''
                       }`}
                       fill="none"
@@ -88,7 +88,7 @@ const FAQSection = () => {
                   </div>
                 </div>
               </button>
-              
+         
               <div className={`overflow-hidden transition-all duration-300 ${
                 openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}>
@@ -109,7 +109,7 @@ const FAQSection = () => {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200"
+            className="inline-block bg-pink text-white border-3 border-white hover:bg-white hover:text-dark hover:border-3 hover:border-pink font-bold py-3 px-8 rounded-[2rem] transition-colors duration-200"
           >
             [Contact CTA button text]
           </a>
