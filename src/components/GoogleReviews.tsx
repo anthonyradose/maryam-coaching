@@ -1,7 +1,7 @@
 const GoogleReviews = () => {
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className=" mx-auto px-8">
         {/* Statistics Banner */}
         <div className="text-center mb-16">
           <div className="grid md:grid-cols-4 gap-8">

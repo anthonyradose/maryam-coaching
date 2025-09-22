@@ -2,7 +2,7 @@
 const HowToFixSection = () => {
   return (
     <section className="bg-white py-16">
-      <div className="max-w-6xl mx-auto px-8">
+      <div className=" mx-auto px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
