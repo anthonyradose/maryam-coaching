@@ -13,8 +13,9 @@ const LandingPage = () => {
     <div>
       <NavBar />
       <HeroSection />
-      <SellingPointsBanner />
       <WhySection />
+      <SellingPointsBanner />
+
       <HowToFixSection />
       <GoogleReviews />
       <FAQSection />

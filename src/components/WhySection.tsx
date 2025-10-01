@@ -1,31 +1,87 @@
-// Why section: The Why's + connection to practice
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import StarIcon from "../assets/star.svg";
+
+
 const WhySection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+
   return (
- <section className="py-16 px-8 md:px-12 lg:px-16 bg-white relative">
-  <img src="../../public/images/heart-calligraphy-style.png" alt="" className="absolute top-0 left-0 w-[150px] h-[150px] opacity-10"/>
-    <img src="../../public/images/heart-calligraphy-style.png" alt="" className="absolute right-0 bottom-0 w-[150px] h-[150px] opacity-10"/>
-  <div className=" mx-auto">
-    <h2 className="text-center text-2xl md:text-4xl font-normal text-pink mb-6 tracking-wide">
-      Je veux retrouver la complicité dans notre couple
-    </h2>
-    <ul className="text-lg text-gray-800 mb-6 space-y-2 list-none pl-0">
-      <li><span className="text-pink font-bold mr-2">-</span>Vous avez l’impression de vivre comme des colocataires, et non comme des amoureux ?</li>
-      <li><span className="text-pink font-bold mr-2">-</span>La flamme de la passion semble avoir laissé place à la routine…</li>
-      <li><span className="text-pink font-bold mr-2">-</span>Les moments d'intimité sont devenus rares ou insatisfaisants…</li>
-      <li><span className="text-pink font-bold mr-2">-</span>Parler de ce que l’on aime, de ce que l’on veut, est devenu mission impossible.</li>
-    </ul>
-    <p className="text-dark mb-4">
-      Finalement, c’est comme si vous viviez avec un.e ami.e, vous ne reconnaissez plus votre partenaire de vie.
-    </p>
-    <p className="text-dark mb-2">
-      Beaucoup de couples traversent des phases de turbulences où la distance, petit à petit, fait place à un manque de connexion.
-    </p>
-    <p className="text-dark font-semibold">
-      Soyez rassuré(e)s, cela ne signifie pas la fin de votre histoire d'amour. Loin de là.<br />
-      Cela signifie simplement qu'il est temps de réveiller l'amour et le désir qui sommeillent en vous.
-    </p>
-  </div>
-</section>
+    <section
+      ref={ref}
+      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden "
+    >
+      {/* Top blob - curves from top-right across to left */}
+      <motion.div
+        initial={{ x: "100%", y: "-50%", opacity: 0 }}
+        animate={
+          isInView
+            ? { x: 0, y: 0, opacity: 1 }
+            : { x: "100%", y: "-50%", opacity: 0 }
+        }
+        transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
+        className="absolute top-0 right-0 w-full h-50  bg-gray-light"
+        style={{
+          borderBottomLeftRadius: "100% 100%",
+          borderBottomRightRadius: "0% 0%",
+        }}
+      />
+
+      {/* Bottom blob - curves from bottom-left across to right */}
+      <motion.div
+        initial={{ x: "-100%", y: "50%", opacity: 0 }}
+        animate={
+          isInView
+            ? { x: 0, y: 0, opacity: 1 }
+            : { x: "-100%", y: "50%", opacity: 0 }
+        }
+        transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
+        className="absolute bottom-0 left-0 w-full h-50 bg-gray-light"
+        style={{
+          borderTopRightRadius: "100% 100%",
+          borderTopLeftRadius: "0% 0%",
+        }}
+      />
+
+      {/* Content with fade-in animation */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="mx-auto relative z-10 max-w-5xl"
+      >
+        <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">Je<span className="italic"> veux</span>
+          <span className="font-bold"> retrouver</span>
+          <span className="italic"> notre </span>
+          <span className="font-bold text-pink">complicité</span> !
+        </h2>
+
+        <p className=" my-8 leading-[1.8] tracking-wide text-lg">
+          <span className="font-bold">Soyez rassuré(e)s</span>, cela ne signifie
+          pas la fin de votre histoire d'amour. Loin de là. Cela signifie
+          simplement qu'il est temps de{" "}
+          <span className="italic text-pink">
+            réveiller l'amour et le désir
+          </span>{" "}
+          qui sommeillent en vous.
+        </p>
+        <ul className="mt-12 mb-8 space-y-8 list-none pl-0 tracking-wide text-lg">
+          <li className="leading-[1.7] ">
+      <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
+            <span className="font-bold">Vous savez que vous vous aimez</span>,
+            mais la distance s’est installée. La peur de perdre ce que vous avez
+            construit est bien réelle.
+          </li>
+          <li className="leading-[1.7] ">
+   <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
+            <span className="font-bold">Vous n’êtes pas seul.e</span>. Comme de
+            nombreux couples avant vous, vous pouvez rallumer la passion et
+            recréer la complicité.
+          </li>
+        </ul>
+      </motion.div>
+    </section>
   );
 };
 
