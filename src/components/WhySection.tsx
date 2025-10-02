@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
 
-
 const WhySection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -51,30 +50,38 @@ const WhySection = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="mx-auto relative z-10 max-w-5xl"
       >
-        <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">Je<span className="italic"> veux</span>
+        <h2 className="text-center text-3xl lg:text-4xl font-normal mb-16 tracking-wider">
+          Je<span className="italic"> veux</span>
           <span className="font-bold"> retrouver</span>
-          <span className="italic"> notre </span>
-          <span className="font-bold text-pink">complicité</span> !
+          <span className="italic"> notre</span>
+          <span className="font-bold text-pink"> complicité</span> !
         </h2>
 
-        <p className=" my-8 leading-[1.8] tracking-wide text-lg">
-          <span className="font-bold">Soyez rassuré(e)s</span>, cela ne signifie
-          pas la fin de votre histoire d'amour. Loin de là. Cela signifie
-          simplement qu'il est temps de{" "}
-          <span className="italic text-pink">
-            réveiller l'amour et le désir
-          </span>{" "}
-          qui sommeillent en vous.
+        <p className="my-8 leading-[1.8] tracking-wide text-base lg:text-lg">
+          La flamme de la passion semble avoir laissé place à{" "}
+          <span className="font-bold">la routine</span>. Les moments d'intimité
+          sont devenus{" "}
+          <span className="italic text-pink">rares ou insatisfaisants</span>.
+          Parler de ce que vous aimez ou désirez est devenu
+          <span className="font-bold"> mission impossible</span>.
         </p>
-        <ul className="mt-12 mb-8 space-y-8 list-none pl-0 tracking-wide text-lg">
+        <ul className="mt-12 mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
           <li className="leading-[1.7] ">
-      <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
+            <img
+              src={StarIcon}
+              alt=""
+              className="w-5 h-5 flex-shrink-0 mr-2 inline"
+            />
             <span className="font-bold">Vous savez que vous vous aimez</span>,
             mais la distance s’est installée. La peur de perdre ce que vous avez
             construit est bien réelle.
           </li>
           <li className="leading-[1.7] ">
-   <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
+            <img
+              src={StarIcon}
+              alt=""
+              className="w-5 h-5 flex-shrink-0 mr-2 inline"
+            />
             <span className="font-bold">Vous n’êtes pas seul.e</span>. Comme de
             nombreux couples avant vous, vous pouvez rallumer la passion et
             recréer la complicité.

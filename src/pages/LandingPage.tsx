@@ -1,11 +1,11 @@
-import NavBar from '../components/NavBar';
-import HeroSection from '../components/HeroSection';
-import SellingPointsBanner from '../components/SellingPointsBanner';
-import WhySection from '../components/WhySection';
-import HowToFixSection from '../components/HowToFixSection';
-import GoogleReviews from '../components/GoogleReviews';
-import FAQSection from '../components/FAQSection';
-import Footer from '../components/Footer';
+import NavBar from "../components/NavBar";
+import HeroSection from "../components/HeroSection";
+import SellingPointsBanner from "../components/SellingPointsBanner";
+import WhySection from "../components/WhySection";
+import HowToFixSection from "../components/HowToFixSection";
+import GoogleReviews from "../components/GoogleReviews";
+import FAQSection from "../components/FAQSection";
+import Footer from "../components/Footer";
 
 // Main landing page layout
 const LandingPage = () => {
@@ -14,9 +14,8 @@ const LandingPage = () => {
       <NavBar />
       <HeroSection />
       <WhySection />
-      <SellingPointsBanner />
-
       <HowToFixSection />
+      <SellingPointsBanner />
       <GoogleReviews />
       <FAQSection />
       <Footer />
