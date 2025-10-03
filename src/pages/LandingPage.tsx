@@ -4,6 +4,7 @@ import SellingPointsBanner from "../components/SellingPointsBanner";
 import WhySection from "../components/WhySection";
 import HowToFixSection from "../components/HowToFixSection";
 import GoogleReviews from "../components/GoogleReviews";
+import AboutMe from "../components/AboutMe";
 import FAQSection from "../components/FAQSection";
 import Footer from "../components/Footer";
 
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <HowToFixSection />
       <SellingPointsBanner />
       <GoogleReviews />
+      <AboutMe />
       <FAQSection />
       <Footer />
     </div>
