@@ -2,22 +2,23 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
 
+const benefits = [
+  "Identifier et comprendre les sources de vos conflits",
+  "Exprimer vos attentes et vos émotions en toute sécurité",
+  "Vous sentir compris(e) et écouté(e)",
+  "Communiquer sans reproches, avec bienveillance",
+  "Retrouver intimité et complicité",
+  "Construire un couple solide et durable dans la tendresse",
+];
+
 const HowToFixSection = () => {
-  const ref = useRef<HTMLElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
-  const benefits = [
-    "Identifier et comprendre les sources de vos conflits",
-    "Exprimer vos attentes et vos émotions en toute sécurité",
-    "Vous sentir compris(e) et écouté(e)",
-    "Communiquer sans reproches, avec bienveillance",
-    "Retrouver intimité et complicité",
-    "Construire un couple solide et durable dans la tendresse",
-  ];
+  const sectionRef = useRef<HTMLElement>(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
   return (
     <section
-      ref={ref}
-      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden"
+      ref={sectionRef}
+      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden" 
     >
       {/* Top blob - curves from top-LEFT across to right (mirrored) */}
       <motion.div

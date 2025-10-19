@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
-import SellingPointsBanner from "../components/SellingPointsBanner";
+import SellingPointsSection from "../components/SellingPointsSection";
 import WhySection from "../components/WhySection";
 import HowToFixSection from "../components/HowToFixSection";
 import GoogleReviews from "../components/GoogleReviews";
@@ -16,7 +16,7 @@ const LandingPage = () => {
       <HeroSection />
       <WhySection />
       <HowToFixSection />
-      <SellingPointsBanner />
+      <SellingPointsSection />
       <GoogleReviews />
       <AboutMe />
       <FAQSection />
