@@ -12,19 +12,14 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-4 lg:text-left max-w-xl font-light">
-            Retrouvez complicité, intimité et confiance dès les premières
-            séances.
-          </p>
-
-          {/* Description */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 lg:text-left max-w-xl font-light">
-            Avec <span className="font-medium text-pink">Maryam Caillon</span> –
-            Sexologue et thérapeute de couple
+            Retrouvez complicité, intimité et confiance dès les premières
+            séances, avec <span className="font-medium text-pink">Maryam Caillon</span> –
+            Sexologue et thérapeute de couple.
           </p>
 
           {/* CTA Button */}
-          <button className="bg-pink text-white px-8 py-3 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200">
+          <button className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200">
             Prendre rendez-vous
           </button>
         </div>

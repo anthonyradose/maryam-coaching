@@ -87,11 +87,11 @@ const SellingPointsSection = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="mx-auto relative z-10 max-w-5xl"
+        className="mx-auto relative z-10 max-w-6xl"
       >
         <div className="grid grid-cols-1 xl:grid-cols-[30%_70%]">
           {/* Left: Headline */}
-          <div className="flex flex-col justify-center h-full xl:pr-28">
+          <div className="flex flex-col justify-center h-full xl:pr-16 bp1440:pr-36">
             <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">
               Pourquoi <span className="font-bold">choisir</span>{" "}
               <span className="italic">ma</span>{" "}

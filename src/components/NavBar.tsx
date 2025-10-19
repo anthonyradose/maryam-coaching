@@ -22,17 +22,17 @@ const NavBar = () => {
         <div className="marquee py-3 ">
           {Array(8)
             .fill([
-              "authenticité",
-              "respect",
-              "partage",
-              "complicite",
-              "bienveillance",
+              "AUTHENTICITÉ",
+              "RESPECT",
+              "PARTAGE",
+              "COMPLICITÉ",
+              "BIENVEILLANCE",
             ])
             .flat()
             .map((value, idx) => (
               <span
                 key={value + idx}
-                className=" text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-light px-3 "
+                className=" text-dark text-xs sm:text-sm  font-light px-3 "
               >
                 {value}
               </span>
@@ -46,10 +46,7 @@ const NavBar = () => {
           <div className="flex items-center space-x-4 lg:ml-8">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a
-                href="#accueil"
-                className="mr-[2rem"
-              >
+              <a href="#accueil" className="mr-[2rem">
                 <img
                   src="/src/assets/temp-logo.svg"
                   alt="Maryam Coaching Logo"
@@ -123,7 +120,7 @@ const NavBar = () => {
           <div className="hidden lg:block">
             <a
               href="#rdv"
-              className=" rounded-4xl bg-white text-dark px-4 py-2 font-normal tracking-[0.2rem] border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
+              className=" rounded-4xl bg-white text-dark px-4 py-2 font-normal tracking-wide border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
             >
               Prendre RDV
             </a>
