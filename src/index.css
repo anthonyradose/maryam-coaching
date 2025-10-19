@@ -14,9 +14,9 @@
   --breakpoint-bp425: 26.5625rem; /* 425px */
   --breakpoint-bp1440: 90rem;     /* 1440px */
 }
-/* *{
+*{
   outline: 3px solid black;
-} */
+}
 @layer base {
   html {
     font-family: "Mulish", sans-serif;
