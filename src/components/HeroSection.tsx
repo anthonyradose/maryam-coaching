@@ -7,7 +7,7 @@ const HeroSection = () => {
         {/* Left Column */}
         <div className="flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 py-8 sm:py-12 lg:py-0 h-full ml-4">
           {/* Main Title */}
-          <h1 className="text-4xl md:text-5xl font-normal text-pink leading-tight mb-6 lg:text-left max-w-2xl lg:max-w-xl tracking-widest">
+          <h1 className="text-4xl md:text-5xl font-normal text-pink leading-tight mb-6 lg:text-left max-w-2xl lg:max-w-xl tracking-wider">
             Ravivez la flamme dans votre couple
           </h1>
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Description */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 lg:text-left max-w-xl font-light">
             Avec <span className="font-medium text-pink">Maryam Caillon</span> –
-            Sexologue et thérapeute de couple à Versailles (et en ligne)
+            Sexologue et thérapeute de couple
           </p>
 
           {/* CTA Button */}

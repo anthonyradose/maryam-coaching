@@ -3,8 +3,16 @@ import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
 
 const HowToFixSection = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const benefits = [
+    "Identifier et comprendre les sources de vos conflits",
+    "Exprimer vos attentes et vos émotions en toute sécurité",
+    "Vous sentir compris(e) et écouté(e)",
+    "Communiquer sans reproches, avec bienveillance",
+    "Retrouver intimité et complicité",
+    "Construire un couple solide et durable dans la tendresse",
+  ];
 
   return (
     <section
@@ -43,49 +51,40 @@ const HowToFixSection = () => {
         }}
       />
 
-      {/* Content with fade-in animation */}
+      {/* Main content: title, benefits list, and closing paragraph with staggered fade-in */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         className="mx-auto relative z-10 max-w-5xl"
       >
- <h2 className="text-center text-3xl lg:text-4xl font-normal mb-16 tracking-wider">
-  En tant que <span className="italic">sexologue</span> et <span className="font-bold text-pink">thérapeute de couple</span>, je vous accompagne à :
-</h2>
-
-        <ul className="mt-12 mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Identifier et comprendre les sources de vos conflits</span>
-          </li>
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Exprimer vos attentes et vos émotions en toute sécurité</span>
-          </li>
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Vous sentir compris(e) et écouté(e)</span>
-          </li>
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Communiquer sans reproches, avec bienveillance</span>
-          </li>
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Retrouver intimité et complicité</span>
-          </li>
-          <li className="leading-[1.7] flex items-start gap-3">
-            <img src={StarIcon} alt="" className="w-5 h-5 flex-shrink-0 mr-2 inline" />
-            <span>Construire un couple solide et durable dans la tendresse</span>
-          </li>
+        <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">
+          En tant que <span className="italic">sexologue</span> et{" "}
+          <span className="font-bold text-pink">thérapeute de couple</span>, je
+          vous accompagne à :
+        </h2>
+        <ul className="mb-16 space-y-6 list-none pl-0 tracking-wide text-base md:text-lg">
+          {benefits.map((benefit) => (
+            <li key={benefit} className="leading-[1.7] flex items-start gap-3">
+              <img
+                src={StarIcon}
+                alt=""
+                role="presentation"
+                className="w-5 h-5 flex-shrink-0 mt-[0.3rem] mr-2"
+              />
+              {benefit}
+            </li>
+          ))}
         </ul>
-
-    <p className="mb-8 leading-[1.8] tracking-wide text-base md:text-lg">
-  Mon rôle est de vous offrir <span className="font-bold">un espace sécurisant</span> où vous pouvez parler
-  sans crainte de jugement, <span className="italic text-pink">retrouver confiance en vous et dans votre
-  couple</span>, et poser les bases d'un amour renouvelé.
-</p>
+        <p className=" leading-[1.8] tracking-wide text-base md:text-lg">
+          Mon rôle est de vous offrir{" "}
+          <span className="font-bold">un espace sécurisant</span> où vous pouvez
+          parler sans crainte de jugement,{" "}
+          <span className="italic text-pink">
+            retrouver confiance en vous et dans votre couple
+          </span>
+          , et poser les bases d'un amour renouvelé.
+        </p>
       </motion.div>
     </section>
   );

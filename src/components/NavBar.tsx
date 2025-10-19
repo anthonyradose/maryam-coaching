@@ -123,7 +123,7 @@ const NavBar = () => {
           <div className="hidden lg:block">
             <a
               href="#rdv"
-              className=" rounded-4xl bg-white text-dark px-6 py-3 font-normal tracking-[0.2rem] border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
+              className=" rounded-4xl bg-white text-dark px-4 py-2 font-normal tracking-[0.2rem] border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
             >
               Prendre RDV
             </a>
