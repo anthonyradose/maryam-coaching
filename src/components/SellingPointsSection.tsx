@@ -1,6 +1,15 @@
 import { Star, Heart, Smile, Palette, Shield, Sprout } from "lucide-react";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import type { LucideIcon } from "lucide-react";
+
+type SellingPoint = {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+const yearsOfExperience = new Date().getFullYear() - 2017;
 
 const sellingPoints = [
   {
@@ -30,8 +39,7 @@ const sellingPoints = [
   {
     icon: Shield,
     title: "Un cadre rassurant et professionnel",
-    description:
-      "Confidentialité, écoute bienveillante et non-jugement, enrichis par 7 années d'expérience, vous assurent un accompagnement de qualité.",
+    description: `Confidentialité, écoute bienveillante et non-jugement, enrichis par ${yearsOfExperience} années d'expérience, vous assurent un accompagnement de qualité.`,
   },
   {
     icon: Sprout,
@@ -39,7 +47,7 @@ const sellingPoints = [
     description:
       "Main dans la main, bâtissez un couple solide et posez les bases d'un amour durable.",
   },
-];
+] satisfies SellingPoint[];
 
 const SellingPointsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -50,7 +58,7 @@ const SellingPointsSection = () => {
       ref={sectionRef}
       className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden"
     >
-      {/* Top blob - curves from top-right across to left */}
+      {/* Top blob */}
       <motion.div
         initial={{ x: "100%", y: "-50%", opacity: 0 }}
         animate={
@@ -59,14 +67,10 @@ const SellingPointsSection = () => {
             : { x: "100%", y: "-50%", opacity: 0 }
         }
         transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
-        className="absolute top-0 right-0 w-full h-50 bg-mint"
-        style={{
-          borderBottomLeftRadius: "100% 100%",
-          borderBottomRightRadius: "0% 0%",
-        }}
+        className="absolute top-0 right-0 w-full h-50 bg-mint rounded-bl-[100%]"
       />
 
-      {/* Bottom blob - curves from bottom-left across to right */}
+      {/* Bottom blob */}
       <motion.div
         initial={{ x: "-100%", y: "50%", opacity: 0 }}
         animate={
@@ -75,14 +79,10 @@ const SellingPointsSection = () => {
             : { x: "-100%", y: "50%", opacity: 0 }
         }
         transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
-        className="absolute bottom-0 left-0 w-full h-50 bg-mint"
-        style={{
-          borderTopRightRadius: "100% 100%",
-          borderTopLeftRadius: "0% 0%",
-        }}
+        className="absolute bottom-0 left-0 w-full h-50 bg-mint rounded-tr-[100%]"
       />
 
-      {/* Content with fade-in animation */}
+      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -103,6 +103,7 @@ const SellingPointsSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8 mt-4">
             {sellingPoints.map((point, index) => {
               const Icon = point.icon;
+
               return (
                 <article key={index} className="flex items-start space-x-4">
                   <div className="text-3xl text-pink" aria-hidden="true">
