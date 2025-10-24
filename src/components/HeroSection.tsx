@@ -13,7 +13,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 lg:text-left max-w-xl font-light">
-            Retrouvez complicité, intimité et confiance dès les premières
+            Retrouvez complicité, intimité et confiance dès vos premières
             séances, avec <span className="font-medium text-pink">Maryam Caillon</span> –
             Sexologue et thérapeute de couple.
           </p>

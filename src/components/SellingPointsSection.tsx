@@ -14,38 +14,34 @@ const yearsOfExperience = new Date().getFullYear() - 2017;
 const sellingPoints = [
   {
     icon: Star,
-    title: "Des résultats rapides et concrets",
-    description:
-      "La majorité des couples observent une amélioration dès 4 à 5 séances, grâce à une approche efficace et moderne.",
+    title: "Des résultats rapides",
+    description: "Une amélioration visible à partir de 4 à 5 séances",
   },
   {
     icon: Heart,
-    title: "Une thérapeute humaine et chaleureuse",
+    title: "Accompagnement humain",
     description:
-      "Un accompagnement professionnel et authentique par une passionnée des relations d'amour, qui sait mêler bienveillance et humour pour rendre chaque séance unique.",
-  },
-  {
-    icon: Smile,
-    title: "Une thérapie dynamique et conviviale",
-    description:
-      "Une approche participative qui crée un espace de confiance, d'échange et de compréhension pour sortir de l'impasse en toute sérénité.",
+      "Réalisé dans la chaleur, le dynamisme et la bienveillance avec un brin d’humour",
   },
   {
     icon: Palette,
     title: "Une approche sur mesure",
-    description:
-      "Votre couple est unique. Chaque séance s'adapte a vos besoins, votre histoire, et à votre rythme.",
+    description: "Adaptée à votre histoire et vos besoins",
+  },
+  {
+    icon: Smile,
+    title: "Thérapie dynamique",
+    description: "Un espace participatif et convivial",
   },
   {
     icon: Shield,
-    title: "Un cadre rassurant et professionnel",
-    description: `Confidentialité, écoute bienveillante et non-jugement, enrichis par ${yearsOfExperience} années d'expérience, vous assurent un accompagnement de qualité.`,
+    title: "Cadre professionnel",
+    description: `Confidentialité et ${yearsOfExperience} ans d’expérience`,
   },
   {
     icon: Sprout,
-    title: "Investir pour votre avenir commun",
-    description:
-      "Main dans la main, bâtissez un couple solide et posez les bases d'un amour durable.",
+    title: "Un investissement pour l’avenir",
+    description: "Bâtir un couple solide et durable",
   },
 ] satisfies SellingPoint[];
 
@@ -92,11 +88,17 @@ const SellingPointsSection = () => {
         <div className="grid grid-cols-1 xl:grid-cols-[30%_70%]">
           {/* Left: Headline */}
           <div className="flex flex-col justify-center h-full xl:pr-16 bp1440:pr-36">
-            <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">
+            <h2 className="text-center text-3xl md:text-4xl font-normal mb-12 tracking-wider">
               Pourquoi <span className="font-bold">choisir</span>{" "}
               <span className="italic">ma</span>{" "}
               <span className="font-bold text-pink">méthode</span> ?
             </h2>
+            <p className="mb-12 leading-[1.8] tracking-wide text-base md:text-lg">
+              Chaque couple est <span className="text-pink italic">unique</span>
+              , mais voici ce que mes patients apprécient{" "}
+              <span className="font-bold">particulièrement</span> lors de leurs
+              accompagnements :
+            </p>
           </div>
 
           {/* Right: Selling Points Grid */}

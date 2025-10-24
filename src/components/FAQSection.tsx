@@ -13,7 +13,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Quel est le tarif ?",
-      answer: "130€ / heure, en couple."
+      answer: "130€ / heure, en couple. 100€ / heure, en individuel. NB: Les séances individuelles sont possibles dans le cadre d’une thérapie de couple. "
     },
     {
       question: "Combien de temps dure une séance ?",
@@ -21,7 +21,7 @@ const FAQSection = () => {
     },
     {
       question: "Les consultations en ligne sont-elles efficaces ?",
-      answer: "Oui, elles offrent la même efficacité et davantage de flexibilité."
+      answer: "Oui, elles offrent la même efficacité qu’une consultation en cabinet et permettent davantage de flexibilité."
     },
     {
       question: "Les consultations sont-elles confidentielles ?",
@@ -29,15 +29,15 @@ const FAQSection = () => {
     },
     {
       question: "Comment préparer la première séance ?",
-      answer: "Réfléchissez à vos difficultés, besoins et objectifs afin de maximiser le temps ensemble."
+      answer: "Je vous invite à réfléchir à vos difficultés, besoins et objectifs en amont de votre séance afin de maximiser le temps ensemble."
     },
     {
-      question: "Que puis-je attendre de la première séance ?",
+      question: "Que puis-je attendre de notre première séance ?",
       answer: "Un moment d'échange pour comprendre votre situation, vos attentes et déterminer ensemble les meilleurs axes de travail."
     },
     {
       question: "Comment savoir si nous avons besoin d'une thérapie de couple ?",
-      answer: "Si vous n'arrivez plus à communiquer ou que la complicité disparaît, la thérapie est la bonne solution."
+      answer: "Si vous n’arrivez plus à vous comprendre, à communiquer ou que la complicité a disparu alors la thérapie de couple est la bonne solution"
     }
   ];
 

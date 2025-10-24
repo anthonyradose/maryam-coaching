@@ -30,7 +30,7 @@ const Footer = () => {
               <p className="flex items-center justify-center md:justify-start gap-2">
                 <Bus className="w-4 h-4 text-pink flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <span className="font-medium text-white">Bus :</span> De Bange
+                  <span className="font-medium text-white">Arrêt de Bus :</span> De Bange
                 </span>
               </p>
               <p className="flex items-center justify-center md:justify-start gap-2">
