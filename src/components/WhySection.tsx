@@ -57,15 +57,22 @@ const WhySection = () => {
           <span className="font-bold text-pink"> complicité</span> !
         </h2>
 
-        <p className="my-8 leading-[1.8] tracking-wide text-base lg:text-lg">
+        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
           La flamme de la passion semble avoir laissé place à{" "}
-          <span className="font-bold">la routine</span>. Les moments d'intimité
-          sont devenus{" "}
-          <span className="italic text-pink">rares ou insatisfaisants</span>.
-          Parler de ce que vous aimez ou désirez est devenu
-          <span className="font-bold"> mission impossible</span>.
+          <span className="font-bold">la routine.</span>
         </p>
-        <ul className="mt-12 mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
+        <br />
+        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
+          Les moments d'intimité sont devenus{" "}
+          <span className="italic text-pink">rares ou insatisfaisants.</span>
+        </p>
+        <br />
+        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
+          Parler de ce que vous aimez ou désirez est devenu
+          <span className="font-bold"> mission impossible.</span>
+        </p>
+        <br />
+        <ul className="mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
           <li className="leading-[1.7] ">
             <img
               src={StarIcon}
@@ -83,8 +90,7 @@ const WhySection = () => {
               className="w-5 h-5 flex-shrink-0 mr-2 inline"
             />
             <span className="font-bold">Vous n’êtes pas seul.e</span>. Comme de
-            nombreux couples avant vous, vous pouvez rallumer le feu de la passion et
-            recréer la complicité pour vivre un amour plus pétillant et plus fort. 
+            nombreux couples avant vous, vous pouvez rallumer le feu de la passion et recréer de la complicité pour vivre un amour plus pétillant et plus fort.
           </li>
         </ul>
       </motion.div>
@@ -93,3 +99,4 @@ const WhySection = () => {
 };
 
 export default WhySection;
+
