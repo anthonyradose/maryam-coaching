@@ -83,8 +83,8 @@ const WhySection = () => {
               className="w-5 h-5 flex-shrink-0 mr-2 inline"
             />
             <span className="font-bold">Vous n’êtes pas seul.e</span>. Comme de
-            nombreux couples avant vous, vous pouvez rallumer la passion et
-            recréer la complicité.
+            nombreux couples avant vous, vous pouvez rallumer le feu de la passion et
+            recréer la complicité pour vivre un amour plus pétillant et plus fort. 
           </li>
         </ul>
       </motion.div>

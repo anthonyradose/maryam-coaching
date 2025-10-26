@@ -64,7 +64,7 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Image */}
           <img
-            src="/images/maryam_caillon2.JPG"
+            src="/public/images/about-me.JPG"
             alt="Maryam Caillon, sexologue et thérapeute de couple"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover flex-shrink-0 shadow-lg mb-8 md:mb-0"
             loading="lazy"

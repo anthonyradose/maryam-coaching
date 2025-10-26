@@ -8,7 +8,7 @@ const benefits = [
   "Vous sentir compris(e) et écouté(e)",
   "Communiquer sans reproches, avec bienveillance",
   "Retrouver intimité et complicité",
-  "Construire un couple solide et durable dans la tendresse",
+  "Construire un couple solide et durable dans la tendresse et l'amour.",
 ];
 
 const HowToFixSection = () => {
@@ -79,8 +79,8 @@ const HowToFixSection = () => {
         </ul>
         <p className=" leading-[1.8] tracking-wide text-base md:text-lg">
           Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pouvez
-          parler sans crainte de jugement,{" "}
+          <span className="font-bold">un espace sécurisant</span> où vous pourrez
+          parler en tout liberté sans craindre le jugement,{" "}
           <span className="italic text-pink">
             retrouver confiance en vous et dans votre couple
           </span>
