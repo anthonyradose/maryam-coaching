@@ -39,64 +39,6 @@
 }
 
 
-/* Media Queries for testing: */
-/* chrome mobile s: */
-
-@media (min-width: 320px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* chrome mobile m: */
-@media (min-width: 375px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* chrome mobile l: */
-@media (min-width: 425px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* tailwind xs: */
-@media (min-width: 640px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* both md: */
-@media (min-width: 768px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* both lg: */
-@media (min-width: 1024px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-  /* tailwind xl: */
-@media (min-width: 1280px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* both laptop l: */
-@media (min-width: 1440px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-/* tailwind 2xl: */
-@media (min-width: 1536px) {
-  body {
-    outline: 3px solid red;
-  }
-}
-
-
 .mobile-menu-links:has(.mobile-menu-dropdown:hover) ~ .cta-div,
 .mobile-menu-links:has(.mobile-menu-dropdown:focus-within) ~ .cta-div {
   margin-top: 0.5rem !important; /* mt-2 */
@@ -127,3 +69,73 @@
 .swiper-pagination-bullet-active {
   background-color: #E60283 !important; /* Custom pink color */
 }
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  width: 200px !important;
+}
+
+/* Media Queries for testing: */
+/* chrome mobile s: */
+
+@media (min-width: 320px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* chrome mobile m: */
+@media (min-width: 375px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* chrome mobile l: */
+@media (min-width: 425px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* tailwind xs: */
+@media (min-width: 640px) {
+  body {
+    outline: 3px solid red;
+  }
+  .swiper-slide {
+  justify-content: center !important;
+}
+
+}
+/* both md: */
+@media (min-width: 768px) {
+  body {
+    outline: 3px solid red;
+  }
+
+}
+/* both lg: */
+@media (min-width: 1024px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+  /* tailwind xl: */
+@media (min-width: 1280px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* both laptop l: */
+@media (min-width: 1440px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+/* tailwind 2xl: */
+@media (min-width: 1536px) {
+  body {
+    outline: 3px solid red;
+  }
+}
+
+
+

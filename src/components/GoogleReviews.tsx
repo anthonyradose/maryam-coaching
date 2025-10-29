@@ -12,6 +12,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const yearsOfExperience = new Date().getFullYear() - 2018;
+
 const AnimatedCounter = ({
   target,
   suffix = "",
@@ -100,7 +102,7 @@ const GoogleReviews = () => {
             : { x: "100%", y: "50%", opacity: 0 }
         }
         transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
-        className="absolute bottom-0 right-0 w-full h-50 bg-pink-light"
+        className="absolute bottom-0 right-0 w-full h-50  bg-pink-light"
         style={{
           borderTopLeftRadius: "100% 100%",
           borderTopRightRadius: "0% 0%",
@@ -122,77 +124,66 @@ const GoogleReviews = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
-              <AnimatedCounter target={450} />
-            </div>
-            <div className="text-sm md:text-base tracking-wide">Sourires</div>
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+  <div className="text-center">
+    <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
+      <AnimatedCounter target={4500} />
+    </div>
+    <div className="text-sm md:text-base tracking-wide">Sourires</div>
+  </div>
 
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
-              <AnimatedCounter target={90} suffix="%" />
-            </div>
-            <div className="text-sm md:text-base tracking-wide">
-              De cœurs généreux satisfaits
-            </div>
-          </div>
+  <div className="text-center">
+    <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
+      <AnimatedCounter target={96} suffix="%" />
+    </div>
+    <div className="text-sm md:text-base tracking-wide">
+      De cœurs généreux satisfaits
+    </div>
+  </div>
 
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
-              <AnimatedCounter target={7} />
-            </div>
-            <div className="text-sm md:text-base tracking-wide">
-              Années de voyage avec vous
-            </div>
-          </div>
+  <div className="text-center">
+    <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
+      <AnimatedCounter target={yearsOfExperience} />
+    </div>
+    <div className="text-sm md:text-base tracking-wide">
+      Années de voyage avec vous
+    </div>
+  </div>
 
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
-              <AnimatedCounter target={300} />
-            </div>
-            <div className="text-sm md:text-base tracking-wide">
-              Visages heureux
-            </div>
-          </div>
-
-          <div className="text-center col-span-2 md:col-span-1">
-            <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
-              <AnimatedCounter target={100} suffix="%" />
-            </div>
-            <div className="text-sm md:text-base tracking-wide">
-              De bonheurs partagés
-            </div>
-          </div>
-        </div>
+  <div className="text-center">
+    <div className="text-3xl md:text-4xl font-bold text-pink mb-2">
+      <AnimatedCounter target={100} suffix="%" />
+    </div>
+    <div className="text-sm md:text-base tracking-wide">
+      De bonheurs partagés
+    </div>
+  </div>
+</div>
 
         {/* Swiper Carousel */}
         <div className="relative px-0 sm:px-12">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
-            slidesPerView={1}
+            slidesPerView='auto'
+            centeredSlides={true}
             navigation={{
               nextEl: ".swiper-button-next-custom",
               prevEl: ".swiper-button-prev-custom",
             }}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 50000, disableOnInteraction: false }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={true}
             breakpoints={{
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
+              640: {
+                     centeredSlides: false
+              }
             }}
             className="pb-12 rounded-4xl"
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index} className="">
-                <div className="bg-white p-6 h-full bp375:min-h-[250px] rounded-xl">
+                <div className="bg-white p-6  rounded-xl  shadow-[2px_3px_3px_theme(colors.gray.300)] border border-gray-300">
                   <div className="flex items-center mb-4">
                     <div className="flex text-yellow-400 text-xl">
                       ⭐⭐⭐⭐⭐
@@ -209,7 +200,7 @@ const GoogleReviews = () => {
           </Swiper>
 
           {/* Custom Navigation Buttons - hidden on mobile */}
-          <button className="swiper-button-prev-custom hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-pink rounded-full items-center justify-center shadow-lg hover:bg-pink/80 transition-colors">
+          <button className="swiper-button-prev-custom hidden sm:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-pink rounded-full items-center justify-center shadow-lg hover:bg-pink/80 transition-colors">
             <svg
               className="w-5 h-5 text-white"
               fill="none"
@@ -224,7 +215,7 @@ const GoogleReviews = () => {
               />
             </svg>
           </button>
-          <button className="swiper-button-next-custom hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-pink rounded-full items-center justify-center shadow-lg hover:bg-pink/80 transition-colors">
+          <button className="swiper-button-next-custom hidden sm:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-pink rounded-full items-center justify-center shadow-lg hover:bg-pink/80 transition-colors">
             <svg
               className="w-5 h-5 text-white"
               fill="none"
@@ -269,3 +260,4 @@ const GoogleReviews = () => {
 };
 
 export default GoogleReviews;
+
