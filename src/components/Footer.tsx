@@ -14,14 +14,14 @@ const Footer = () => {
               className="h-12 w-auto mx-auto md:mx-0 mb-4"
               loading="lazy"
             />
-            <h2 className="text-lg font-semibold mb-2">Maryam Caillon</h2>
+            <h2 className="text-lg lg:text-xl font-semibold mb-2">Maryam Caillon</h2>
             <p className="text-sm text-gray-400">
               Sexologue & Thérapeute de couple
             </p>
           </div>
 
-          <div className="text-sm leading-relaxed text-center">
-            <h3 className="font-semibold mb-4 text-base">Contact</h3>
+          <div className="text-sm leading-relaxed text-center md:text-start">
+            <h3 className="font-semibold mb-4 text-base lg:text-lg">Contact</h3>
 
             <div className="inline-grid grid-cols-[auto_auto] gap-x-3 gap-y-3 items-center text-gray-400">
               <Phone
@@ -30,7 +30,7 @@ const Footer = () => {
               />
               <a
                 href="tel:+33636115957"
-                className="hover:text-pink transition-colors"
+                className="hover:text-pink transition-colors mr-8 md:text-start md:mr-0"
               >
                 06 36 11 59 57
               </a>
@@ -41,7 +41,7 @@ const Footer = () => {
               />
               <a
                 href="contact@maryamcoaching.com"
-                className="hover:text-pink transition-colors"
+                className="hover:text-pink transition-colors md:text-xs lg:text-base"
               >
                 contact@maryamcoaching.com
               </a>
@@ -49,9 +49,9 @@ const Footer = () => {
           </div>
 
           {/* Address & CTA */}
-          <div className="text-center md:text-left mb-10">
-            <address className="text-sm leading-relaxed not-italic mb-10">
-              <h3 className="font-semibold mb-3 text-base">
+          <div className="text-center md:text-left">
+            <address className="text-sm leading-relaxed not-italic">
+              <h3 className="font-semibold mb-3 text-base lg:text-lg">
                 Coordonnées du cabinet
               </h3>
               <p className="mb-3 text-gray-400">
@@ -60,62 +60,57 @@ const Footer = () => {
                 78000 Versailles
               </p>
               <div className="inline-grid grid-cols-[auto_auto] gap-x-3 gap-y-3 items-center text-gray-400">
-                <div>
-                  <Bus
-                    className="w-5 h-5 text-pink flex-shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span>Arrêt de Bus :</span>
-                  <span>De Bange</span>
-                </div>
-                <div>
-                  <Train
-                    className="w-5 h-5 text-pink flex-shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span>Train :</span>
-                  <span>Versailles Rive Droite</span>
-                </div>
+                <Bus
+                  className="w-5 h-5 text-pink flex-shrink-0 mr-2 md:mr-0"
+                  aria-hidden="true"
+                />
+                <span className="mr-10 md:mr-0">Arrêt de Bus : De Bange</span>
+
+                <Train
+                  className="w-5 h-5 text-pink flex-shrink-0"
+                  aria-hidden="true"
+                />
+                <span className="mr-4 md:mr-0">Train : Versailles Rive Droite</span>
               </div>
             </address>
-
-            <a
+          </div>
+          <div className="text-sm leading-relaxed text-center md:text-left">
+            <h3 className="font-semibold mb-3 text-base lg:text-lg">Réseaux sociaux</h3>
+            <div className="flex gap-3 justify-center md:justify-start">
+              <a
+                href="#"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white  transition-colors group"
+                aria-label="YouTube"
+              >
+                <img
+                  src={TiktokIcon}
+                  alt=""
+                  className="w-5 h-5 group-hover:brightness-0"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="text-center md:col-start-3 md:text-start">
+                        <a
               href="#"
-              className="inline-block bg-pink text-white text-center px-4 py-2 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"
+              className="inline-block bg-pink text-white text-center px-4 py-2 md:px-3 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"
               aria-label="Prendre rendez-vous avec Maryam Caillon"
             >
               Prendre rendez-vous
-            </a>
-          </div>
-        </div>
-
-        <div className="text-sm leading-relaxed text-center md:text-left mb-10">
-          <h3 className="font-semibold mb-3 text-base">Réseaux sociaux</h3>
-          <div className="flex gap-3 justify-center md:justify-start">
-            <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white  transition-colors group"
-              aria-label="YouTube"
-            >
-              <img
-                src={TiktokIcon}
-                alt=""
-                className="w-5 h-5 group-hover:brightness-0"
-              />
             </a>
           </div>
         </div>

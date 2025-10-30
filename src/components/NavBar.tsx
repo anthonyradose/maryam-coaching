@@ -24,7 +24,7 @@ const NavBar = () => {
             .fill([
               "AUTHENTICITÉ",
               "RESPECT",
-              "PARTAGE",
+              "PARTAGES",
               "COMPLICITÉ",
               "BIENVEILLANCE",
             ])
