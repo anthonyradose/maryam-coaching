@@ -108,6 +108,7 @@ const Footer = () => {
                         <a
               href="#"
               className="inline-block bg-pink text-white text-center px-4 py-2 md:px-3 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"
+              id="footer-booking-btn"
               aria-label="Prendre rendez-vous avec Maryam Caillon"
             >
               Prendre rendez-vous

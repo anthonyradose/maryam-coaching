@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="lg:h-[calc(100vh-7rem)] overflow-hidden">
+    <section className="lg:h-[calc(100vh-7rem)] overflow-hidden" id= "hero-section">
       <div className="grid lg:grid-cols-2 items-stretch h-full">
         {/* Left Column */}
         <div className="flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 py-8 sm:py-12 lg:py-0 h-full ml-4">

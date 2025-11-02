@@ -6,6 +6,7 @@ import HowToFixSection from "../components/HowToFixSection";
 import GoogleReviews from "../components/GoogleReviews";
 import AboutMe from "../components/AboutMe";
 import FAQSection from "../components/FAQSection";
+import { StickyBookingButton } from "../components/StickyBookingButton";
 import Footer from "../components/Footer";
 
 // Main landing page layout
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <GoogleReviews />
       <AboutMe />
       <FAQSection />
+      <StickyBookingButton />
       <Footer />
     </div>
   );
