@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <img
-              src="/src/assets/temp-logo.svg"
+              src="/temp-logo.svg"
               alt="Maryam Coaching Logo"
               className="h-12 w-auto mx-auto md:mx-0 mb-4"
               loading="lazy"

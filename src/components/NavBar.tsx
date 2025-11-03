@@ -48,7 +48,7 @@ const NavBar = () => {
             <div className="flex-shrink-0">
               <a href="#accueil" className="mr-[2rem">
                 <img
-                  src="/src/assets/temp-logo.svg"
+                  src="/temp-logo.svg"
                   alt="Maryam Coaching Logo"
                   className="h-10 w-auto max-h-12 object-contain drop-shadow-sm"
                 />

@@ -34,7 +34,7 @@ const HeroSection = () => {
           <div className="relative img-div h-full">
             <img
               className="w-full h-full object-cover"
-              src="../../public/images/DSC02294.JPG"
+              src="/images/DSC02294.JPG"
               alt="Maryam Caillon portrait"
             />
             <svg
