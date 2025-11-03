@@ -42,14 +42,14 @@ const HeroSection = () => {
               viewBox="0 0 600 900"
               preserveAspectRatio="none"
             >
-              <use xlinkHref="../../public/images/wave-haikei-sm.svg" />
+              <use xlinkHref="/images/wave-haikei-sm.svg" />
             </svg>
             <svg
               className="absolute hidden lg:block top-0 left-spacing-neg-27 lg:left-spacing-neg-18 bp1440:left-spacing-neg-17 w-full h-full pointer-events-none"
               viewBox="0 0 900 600"
               preserveAspectRatio="none"
             >
-              <use xlinkHref="../../public/images/wave-haikei (1).svg" />
+              <use xlinkHref="/images/wave-haikei (1).svg" />
             </svg>
           </div>
         </motion.div>
