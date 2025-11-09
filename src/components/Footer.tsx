@@ -78,7 +78,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-base lg:text-lg">Réseaux sociaux</h3>
             <div className="flex gap-3 justify-center md:justify-start">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/maryam_accompagnante"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
@@ -87,7 +87,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.youtube.com/@maryamaccompagnante"
+                href="https://www.youtube.com/@maryam_accompagnante"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
@@ -96,7 +96,7 @@ const Footer = () => {
                 <Youtube className="w-5 h-5" />
               </a>
               <a
-                href="https://www.tiktok.com/@maryam"
+                href="https://www.tiktok.com/@maryam_accompagnante"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white  transition-colors group"
