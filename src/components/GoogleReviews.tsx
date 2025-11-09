@@ -345,7 +345,9 @@ const GoogleReviews = () => {
         {/* Google Business Link */}
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://www.google.com/maps/place/Maryam+Caillon+-+Sexologue/@48.8014467,2.1308639,17z/data=!4m8!3m7!1s0x47e67db3f2e8b8e1:0x8c8f8e8e8e8e8e8e!8m2!3d48.8014467!4d2.1334388!9m1!1b1!16s%2Fg%2F11c5c5c5c5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center text-pink hover:text-pink/80 font-semibold text-base tracking-wide"
           >
             Voir tous les avis sur Google

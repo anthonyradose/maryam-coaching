@@ -42,8 +42,8 @@ const NavBar = () => {
 
       {/* Navbar */}
       <nav className="sticky top-0 left-0 right-0 bg-pink z-50">
-        <div className="flex flex-row-reverse lg:flex-row justify-between items-center ml-4 px-4 py-4">
-          <div className="flex items-center space-x-4 lg:ml-8">
+        <div className="flex flex-row-reverse md:flex-row justify-between items-center ml-4 px-4 py-4">
+          <div className="flex items-center space-x-4 md:ml-8">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="#accueil" className="mr-[2rem">
@@ -56,15 +56,19 @@ const NavBar = () => {
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <div className="hidden md:flex items-center space-x-4 xl:space-x-6">
               <a
-                href="#accueil"
+                href="https://maryamcoaching.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-gray-light font-light transition-colors duration-300"
               >
                 Accueil
               </a>
               <a
-                href="#qui-suis-je"
+                href="https://maryamcoaching.com/qui-suis-je/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white  font-light transition-colors duration-300"
               >
                 Qui suis-je ?
@@ -88,13 +92,17 @@ const NavBar = () => {
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white   rounded-none border border-gray-200 py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <a
-                    href="#therapie-couple"
+                    href="https://maryamcoaching.com/therapie-de-couple-a-versailles-et-en-ligne/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-4 py-3 text-gray-700  transition-colors"
                   >
                     Thérapie de couple
                   </a>
                   <a
-                    href="#sexotherapie"
+                    href="https://maryamcoaching.com/sexotherapie/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-4 py-3 text-gray-700  transition-colors"
                   >
                     Sexothérapie
@@ -109,7 +117,9 @@ const NavBar = () => {
                 Blog
               </a>
               <a
-                href="#contact"
+                href="https://maryamcoaching.com/contactez-moi/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-gray-light font-light transition-colors duration-300"
               >
                 Contact
@@ -117,9 +127,11 @@ const NavBar = () => {
             </div>
           </div>
           {/* CTA Button */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <a
-              href="#rdv"
+              href="https://maryamcoaching.com/contactez-moi/"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" rounded-4xl bg-white text-dark px-4 py-2 font-normal tracking-wide border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
             >
               Prendre RDV
@@ -129,7 +141,7 @@ const NavBar = () => {
           {/* Mobile Menu Open Button */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors sm:ml-4 md:ml-8"
+            className="md:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors sm:ml-4 md:ml-8"
             aria-label="Toggle menu"
           >
             <div className={`w-6 h-0.5 bg-white transition-all duration-300`} />
@@ -142,11 +154,11 @@ const NavBar = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="fixed inset-0 z-51 bg-black opacity-50 backdrop-blur-sm lg:hidden "></div>
+          <div className="fixed inset-0 z-51 bg-black opacity-50 backdrop-blur-sm md:hidden "></div>
         )}
         {/* Mobile Menu */}
         <div
-          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full sm:w-auto h-full z-55 lg:hidden bg-pink-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
+          className={` fixed flex flex-col items-start justify-start top-0 left-0 w-full sm:w-auto h-full z-55 md:hidden bg-pink-light overflow-hidden shadow-lg transition-all duration-200  px-8 py-4 space-y-8  ${
             isMenuOpen
               ? "   translate-x-0 opacity-100 duration-300"
               : " -translate-x-full opacity-0 duration-300"
@@ -155,7 +167,7 @@ const NavBar = () => {
           {/* Mobile Menu Close Button */}
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="lg:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors mt-12"
+            className="md:hidden flex flex-col gap-1 py-2 rounded hover:bg-gray-100 transition-colors mt-12"
             aria-label="Toggle menu"
           >
             <div
@@ -176,13 +188,17 @@ const NavBar = () => {
           </button>
           <div className="flex flex-col w-full space-y-8 mobile-menu-links">
             <a
-              href="#accueil"
+              href="https://maryamcoaching.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block py-2 text-dark w-full transition-colors tracking-[0.2rem]"
             >
               Accueil
             </a>
             <a
-              href="#qui-suis-je"
+              href="https://maryamcoaching.com/qui-suis-je/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block py-2 text-dark w-full  transition-colors tracking-[0.2rem]"
             >
               Qui suis-je ?
@@ -206,13 +222,17 @@ const NavBar = () => {
               </button>
               <div className=" w-full hidden group-hover:block bg-pink-light    transition-all duration-300">
                 <a
-                  href="#therapie-couple"
+                  href="https://maryamcoaching.com/therapie-de-couple-a-versailles-et-en-ligne/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-4 py-3 text-dark transition-colors tracking-[0.2rem]"
                 >
                   Thérapie de couple
                 </a>
                 <a
-                  href="#sexotherapie"
+                  href="https://maryamcoaching.com/sexotherapie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-4 py-3 text-dark  transition-colors tracking-[0.2rem]"
                 >
                   Sexothérapie
@@ -227,7 +247,9 @@ const NavBar = () => {
               Blog
             </a>
             <a
-              href="#contact"
+              href="https://maryamcoaching.com/contactez-moi/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block py-2 text-dark w-full  transition-colors tracking-[0.2rem]"
             >
               Contact
@@ -235,7 +257,9 @@ const NavBar = () => {
           </div>
           <div className="w-full text-center cta-div mt-8">
             <a
-              href="#rdv"
+              href="https://maryamcoaching.com/contactez-moi/"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" w-auto  font-medium   transition-colors text-center tracking-[0.2rem] bg-white p-4 rounded-4xl "
             >
               Prendre RDV

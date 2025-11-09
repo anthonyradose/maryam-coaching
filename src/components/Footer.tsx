@@ -40,7 +40,7 @@ const Footer = () => {
                 aria-hidden="true"
               />
               <a
-                href="contact@maryamcoaching.com"
+                href="mailto:contact@maryamcoaching.com"
                 className="hover:text-pink transition-colors md:text-xs lg:text-base"
               >
                 contact@maryamcoaching.com
@@ -78,23 +78,29 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-base lg:text-lg">Réseaux sociaux</h3>
             <div className="flex gap-3 justify-center md:justify-start">
               <a
-                href="#"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@maryamaccompagnante"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white hover:text-dark transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@maryam"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-pink hover:bg-white  transition-colors group"
-                aria-label="YouTube"
+                aria-label="TikTok"
               >
                 <img
                   src={TiktokIcon}
@@ -106,7 +112,9 @@ const Footer = () => {
           </div>
           <div className="text-center md:col-start-3 md:text-start">
                         <a
-              href="#"
+              href="https://maryamcoaching.com/contactez-moi/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-pink text-white text-center px-4 py-2 md:px-3 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"
               id="footer-booking-btn"
               aria-label="Prendre rendez-vous avec Maryam Caillon"
@@ -125,7 +133,9 @@ const Footer = () => {
               <ul className="flex space-x-6">
                 <li>
                   <a
-                    href="#"
+                    href="https://maryamcoaching.com/mentions-legales/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-pink transition-colors"
                   >
                     Mentions légales
@@ -133,7 +143,9 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://maryamcoaching.com/politique-de-confidentialite/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-pink transition-colors"
                   >
                     Politique de confidentialité
