@@ -24,7 +24,8 @@ export const StickyBookingButton = () => {
 
   return (
     <motion.a
-      href="#booking"
+      href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
+      target="_blank"
       initial={{ y: 100 }}
       animate={shouldShowButton ? { y: 0 } : { y: 100 }}
       transition={

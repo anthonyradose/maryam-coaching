@@ -19,9 +19,9 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Button */}
-          <button className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200">
+          <a className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200" href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles" target="_blank">
             Prendre rendez-vous
-          </button>
+          </a>
         </div>
 
         {/* Right Column - Photo - slides in from right */}

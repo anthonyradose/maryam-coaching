@@ -112,7 +112,7 @@ const Footer = () => {
           </div>
           <div className="text-center md:col-start-3 md:text-start">
                         <a
-              href="https://maryamcoaching.com/contactez-moi/"
+              href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-pink text-white text-center px-4 py-2 md:px-3 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"

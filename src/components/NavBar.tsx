@@ -129,7 +129,7 @@ const NavBar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="https://maryamcoaching.com/contactez-moi/"
+              href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded-4xl bg-white text-dark px-4 py-2 font-normal tracking-wide border-2 border-transparent hover:border-white hover:bg-pink hover:text-white transition-colors"
@@ -257,7 +257,7 @@ const NavBar = () => {
           </div>
           <div className="w-full text-center cta-div mt-8">
             <a
-              href="https://maryamcoaching.com/contactez-moi/"
+              href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
               target="_blank"
               rel="noopener noreferrer"
               className=" w-auto  font-medium   transition-colors text-center tracking-[0.2rem] bg-white p-4 rounded-4xl "
