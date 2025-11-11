@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import type { CampaignConfig } from "../config/campaigns";
 
-const HeroSection = () => {
+const HeroSection = ({ title, subtitle, cta, href }: CampaignConfig['hero']) => {
   return (
     <section className="lg:h-[calc(100vh-7rem)] overflow-hidden" id= "hero-section">
       <div className="grid lg:grid-cols-2 items-stretch h-full">
@@ -8,19 +9,17 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 py-8 sm:py-12 lg:py-0 h-full ml-4">
           {/* Main Title */}
           <h1 className="text-4xl md:text-5xl font-normal text-pink leading-tight mb-6 lg:text-left max-w-2xl lg:max-w-xl tracking-wider">
-            Ravivez la flamme dans votre couple
+            {title}
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 lg:text-left max-w-xl font-light">
-            Retrouvez complicité, intimité et confiance dès vos premières
-            séances, avec <span className="font-medium text-pink">Maryam Caillon</span> –
-            Sexologue et thérapeute de couple.
+            {subtitle}
           </p>
 
           {/* CTA Button */}
-          <a className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200" href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles" target="_blank">
-            Prendre rendez-vous
+          <a className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200" href={href} target="_blank">
+            {cta}
           </a>
         </div>
 
