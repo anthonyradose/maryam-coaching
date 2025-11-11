@@ -1,10 +1,8 @@
-import LandingPage from './pages/LandingPage'
-import './App.css'
+import { campaigns } from "./config/campaigns";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  return (
-    <LandingPage />
-  )
+  return <LandingPage config={campaigns.campaign3} />;
 }
 
-export default App
+export default App;
