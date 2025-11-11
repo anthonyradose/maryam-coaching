@@ -8,4 +8,13 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+    build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        campaign4: './campaigns/campaign4/index.html',
+      }
+    }
+  }
 })
+
