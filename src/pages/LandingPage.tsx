@@ -8,13 +8,17 @@ import AboutMe from "../components/AboutMe";
 import FAQSection from "../components/FAQSection";
 import { StickyBookingButton } from "../components/StickyBookingButton";
 import Footer from "../components/Footer";
+import type { CampaignConfig } from "../config/campaigns";
 
+interface LandingPageProps {
+  config: CampaignConfig;
+}
 // Main landing page layout
-const LandingPage = () => {
+const LandingPage = ({ config }: LandingPageProps) => {
   return (
     <div>
       <NavBar />
-      <HeroSection />
+      <HeroSection {...config.hero} />
       <WhySection />
       <HowToFixSection />
       <SellingPointsSection />
