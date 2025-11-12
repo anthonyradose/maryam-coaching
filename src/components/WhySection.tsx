@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
+import type { CampaignConfig } from "../config/campaigns";
 
-const WhySection = () => {
+const WhySection = ({ title, paragraphs, bullets }: CampaignConfig['why']) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -51,47 +52,29 @@ const WhySection = () => {
         className="mx-auto relative z-10 max-w-5xl"
       >
         <h2 className="text-center text-3xl lg:text-4xl font-normal mb-16 tracking-wider">
-          Je<span className="italic"> veux</span>
-          <span className="font-bold"> retrouver</span>
-          <span className="italic"> notre</span>
-          <span className="font-bold text-pink"> complicité</span> !
+          {title}
         </h2>
 
-        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
-          La flamme de la passion semble avoir laissé place à{" "}
-          <span className="font-bold">la routine.</span>
-        </p>
-        <br />
-        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
-          Les moments d'intimité sont devenus{" "}
-          <span className="italic text-pink">rares ou insatisfaisants.</span>
-        </p>
-        <br />
-        <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
-          Parler de ce que vous aimez ou désirez est devenu
-          <span className="font-bold"> mission impossible.</span>
-        </p>
-        <br />
-        <ul className="mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
-          <li className="leading-[1.7] ">
-            <img
-              src={StarIcon}
-              alt=""
-              className="w-5 h-5 flex-shrink-0 mr-2 inline"
-            />
-            <span className="font-bold">Vous savez que vous vous aimez</span>,
-            mais la distance s’est installée. La peur de perdre ce que vous avez
-            construit est bien réelle.
-          </li>
-          <li className="leading-[1.7] ">
-            <img
-              src={StarIcon}
-              alt=""
-              className="w-5 h-5 flex-shrink-0 mr-2 inline"
-            />
-            <span className="font-bold">Vous n’êtes pas seul.e</span>. Comme de
-            nombreux couples avant vous, vous pouvez rallumer le feu de la passion et recréer de la complicité pour vivre un amour plus pétillant et plus fort.
-          </li>
+        {paragraphs.map((paragraph, index) => (
+          <div key={index}>
+            <p className="leading-[1.8] tracking-wide text-base lg:text-lg">
+              {paragraph}
+            </p>
+            <br />
+          </div>
+        ))}
+
+                <ul className="mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
+          {bullets.map((bullet, index) => (
+            <li key={index} className="leading-[1.7] ">
+              <img
+                src={StarIcon}
+                alt=""
+                className="w-5 h-5 flex-shrink-0 mr-2 inline"
+              />
+              {bullet}
+            </li>
+          ))}
         </ul>
       </motion.div>
     </section>
