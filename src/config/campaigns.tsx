@@ -4,7 +4,7 @@ export interface CampaignConfig {
   hero: {
     title: string;
     subtitle: React.ReactNode;
-    cta: string;
+    ctaSubtitle?: string;
     href: string;
   };
   why: {
@@ -12,9 +12,74 @@ export interface CampaignConfig {
     paragraphs: React.ReactNode[];
     bullets: React.ReactNode[];
   };
+  howToFix: {
+    title: React.ReactNode;
+    description: React.ReactNode;
+  };
 }
 
 export const campaigns = {
+  campaign1: {
+    hero: {
+      title: "Je veux sauver notre couple !",
+      subtitle: (
+        <>
+          Apaisez les tensions et reconstruisez votre relation en quelques séances éteindre avec{" "}
+          <span className="font-medium text-pink">Maryam Caillon</span> – Conseillère conjugale & Sexologue
+        </>
+      ),
+      ctaSubtitle: "Consultations en visioconférence depuis le confort de votre maison",
+      href: "https://calendly.com/maryamcoaching/seance-en-visioconference",
+    },
+    why: {
+      title: (
+        <>
+          Et si faire <span className="italic">renaitre</span>{" "}
+          <span className="font-bold text-pink">l'amour</span> était possible ?
+        </>
+      ),
+      paragraphs: [
+        <>
+          Entre le travail, les enfants, et les contraintes du quotidien, il devient difficile de trouver du temps pour vous.
+        </>,
+        <>
+          L'intimité est devenue inexistante ou mécanique.
+        </>,
+        <>
+          Vous avez l'impression d'être devenus que des "colocataires".
+        </>,
+      ],
+      bullets: [
+        <>
+          <span className="font-bold">Vous ne savez plus comment retrouver votre équilibre à deux.</span> La peur de perdre ce que vous avez construit est bien réelle.
+        </>,
+        <>
+          <span className="font-bold">Vous n'êtes pas seul.e</span>. Surtout, ce n'est pas une fatalité.
+        </>,
+      ],
+    },
+    howToFix: {
+      title: (
+        <>
+          En tant que <span className="italic">conseillère conjugale</span> et{" "}
+          <span className="font-bold text-pink">thérapeute de couple</span>, je
+          vous accompagne à :
+        </>
+      ),
+      description: (
+        <>
+          Mon rôle est de vous offrir{" "}
+          <span className="font-bold">un espace sécurisant</span> où vous pourrez
+          parler en toute liberté sans craindre le jugement,{" "}
+          <span className="italic text-pink">
+            retrouver confiance en vous et dans votre couple
+          </span>
+          , et poser les bases d'un amour renouvelé.
+        </>
+      ),
+    },
+  },
+
   campaign3: {
     hero: {
       title: "Ravivez la flamme dans votre couple",
@@ -25,7 +90,6 @@ export const campaigns = {
           Sexologue et thérapeute de couple à Versailles (et en ligne)
         </>
       ),
-      cta: "Prendre rendez-vous",
       href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
     },
     why: {
@@ -63,6 +127,26 @@ export const campaigns = {
         </>,
       ],
     },
+    howToFix: {
+      title: (
+        <>
+          En tant que <span className="italic">sexologue</span> et{" "}
+          <span className="font-bold text-pink">thérapeute de couple</span>, je
+          vous accompagne à :
+        </>
+      ),
+      description: (
+        <>
+          Mon rôle est de vous offrir{" "}
+          <span className="font-bold">un espace sécurisant</span> où vous pourrez
+          parler en tout liberté sans craindre le jugement,{" "}
+          <span className="italic text-pink">
+            retrouver confiance en vous et dans votre couple
+          </span>
+          , et poser les bases d'un amour renouvelé.
+        </>
+      ),
+    },
   },
 
   campaign4: {
@@ -76,7 +160,6 @@ export const campaigns = {
           Sexologue et thérapeute de couple à Versailles.
         </>
       ),
-      cta: "Prendre rendez-vous",
       href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
     },
     why: {
@@ -107,6 +190,26 @@ export const campaigns = {
           <span className="font-bold">Vous méritez d'être heureux ensemble</span>. Donnez-vous une chance de reconstruire une relation saine et épanouissante.
         </>,
       ],
+    },
+    howToFix: {
+      title: (
+        <>
+          En tant que <span className="italic">sexologue</span> et{" "}
+          <span className="font-bold text-pink">thérapeute de couple</span>, je
+          vous accompagne à :
+        </>
+      ),
+      description: (
+        <>
+          Mon rôle est de vous offrir{" "}
+          <span className="font-bold">un espace sécurisant</span> où vous pourrez
+          parler en tout liberté sans craindre le jugement,{" "}
+          <span className="italic text-pink">
+            retrouver confiance en vous et dans votre couple
+          </span>
+          , et poser les bases d'un amour renouvelé.
+        </>
+      ),
     },
   },
 } satisfies Record<string, CampaignConfig>;

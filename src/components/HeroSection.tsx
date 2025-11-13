@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import type { CampaignConfig } from "../config/campaigns";
 
-const HeroSection = ({ title, subtitle, cta, href }: CampaignConfig['hero']) => {
+const HeroSection = ({ title, subtitle, ctaSubtitle, href }: CampaignConfig['hero']) => {
   return (
     <section className="lg:h-[calc(100vh-7rem)] overflow-hidden" id= "hero-section">
       <div className="grid lg:grid-cols-2 items-stretch h-full">
@@ -17,9 +17,16 @@ const HeroSection = ({ title, subtitle, cta, href }: CampaignConfig['hero']) => 
             {subtitle}
           </p>
 
+          {/* CTA Subtitle */}
+          {ctaSubtitle && (
+            <p className="text-sm md:text-base text-gray-700 mb-4 font-medium lg:text-left max-w-xl">
+              {ctaSubtitle}
+            </p>
+          )}
+
           {/* CTA Button */}
           <a className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200" href={href} target="_blank">
-            {cta}
+            Prendre rendez-vous
           </a>
         </div>
 

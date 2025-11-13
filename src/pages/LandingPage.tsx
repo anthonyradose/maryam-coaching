@@ -20,7 +20,7 @@ const LandingPage = ({ config }: LandingPageProps) => {
       <NavBar />
       <HeroSection {...config.hero} />
       <WhySection {...config.why} />
-      <HowToFixSection />
+      <HowToFixSection {...config.howToFix} />
       <SellingPointsSection />
       <GoogleReviews />
       <AboutMe />

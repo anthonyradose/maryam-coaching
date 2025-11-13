@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
+import type { CampaignConfig } from "../config/campaigns";
 
 const benefits = [
   "Identifier et comprendre les sources de vos conflits",
@@ -11,7 +12,7 @@ const benefits = [
   "Construire un couple solide et durable dans la tendresse et l'amour.",
 ];
 
-const HowToFixSection = () => {
+const HowToFixSection = ({ title, description }: CampaignConfig['howToFix']) => {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
@@ -60,9 +61,7 @@ const HowToFixSection = () => {
         className="mx-auto relative z-10 max-w-5xl"
       >
         <h2 className="text-center text-3xl md:text-4xl font-normal mb-16 tracking-wider">
-          En tant que <span className="italic">sexologue</span> et{" "}
-          <span className="font-bold text-pink">thérapeute de couple</span>, je
-          vous accompagne à :
+          {title}
         </h2>
         <ul className="mb-16 space-y-6 list-none pl-0 tracking-wide text-base md:text-lg">
           {benefits.map((benefit) => (
@@ -78,13 +77,7 @@ const HowToFixSection = () => {
           ))}
         </ul>
         <p className=" leading-[1.8] tracking-wide text-base md:text-lg">
-          Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pourrez
-          parler en tout liberté sans craindre le jugement,{" "}
-          <span className="italic text-pink">
-            retrouver confiance en vous et dans votre couple
-          </span>
-          , et poser les bases d'un amour renouvelé.
+          {description}
         </p>
       </motion.div>
     </section>
