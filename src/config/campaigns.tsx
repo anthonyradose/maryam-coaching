@@ -18,126 +18,97 @@ export interface CampaignConfig {
   };
 }
 
+const sharedHowToFixDescription = (
+  <>
+    Mon rôle est de vous offrir{" "}
+    <span className="font-bold">un espace sécurisant</span> où vous pourrez
+    parler en toute liberté sans craindre le jugement,{" "}
+    <span className="italic text-pink">
+      retrouver confiance en vous et dans votre couple
+    </span>
+    , et poser les bases d'un amour renouvelé.
+  </>
+);
+
+const howToFixConseillere = {
+  title: (
+    <>
+      En tant que <span className="italic">conseillère conjugale</span> et{" "}
+      <span className="font-bold text-pink">thérapeute de couple</span>, je
+      vous accompagne à :
+    </>
+  ),
+  description: sharedHowToFixDescription,
+};
+
+const howToFixSexologue = {
+  title: (
+    <>
+      En tant que <span className="italic">sexologue</span> et{" "}
+      <span className="font-bold text-pink">thérapeute de couple</span>, je
+      vous accompagne à :
+    </>
+  ),
+  description: sharedHowToFixDescription,
+};
+
+// Base config for campaign1 & campaign2
+const baseCampaign1And2 = {
+  hero: {
+    title: "Je veux sauver notre couple !",
+    subtitle: (
+      <>
+        Apaisez les tensions et reconstruisez votre relation en quelques séances éteindre avec{" "}
+        <span className="font-medium text-pink">Maryam Caillon</span> – Conseillère conjugale & Sexologue
+      </>
+    ),
+  },
+  why: {
+    title: (
+      <>
+        Et si faire <span className="italic">renaitre</span>{" "}
+        <span className="font-bold text-pink">l'amour</span> était possible ?
+      </>
+    ),
+    paragraphs: [
+      <>
+        Entre le travail, les enfants, et les contraintes du quotidien, il devient difficile de trouver du temps pour vous.
+      </>,
+      <>
+        L'intimité est devenue inexistante ou mécanique.
+      </>,
+      <>
+        Vous avez l'impression d'être devenus que des "colocataires".
+      </>,
+    ],
+    bullets: [
+      <>
+        <span className="font-bold">Vous ne savez plus comment retrouver votre équilibre à deux.</span> La peur de perdre ce que vous avez construit est bien réelle.
+      </>,
+      <>
+        <span className="font-bold">Vous n'êtes pas seul.e</span>. Surtout, ce n'est pas une fatalité.
+      </>,
+    ],
+  },
+  howToFix: howToFixConseillere,
+};
+
 export const campaigns = {
   campaign1: {
+    ...baseCampaign1And2,
     hero: {
-      title: "Je veux sauver notre couple !",
-      subtitle: (
-        <>
-          Apaisez les tensions et reconstruisez votre relation en quelques séances éteindre avec{" "}
-          <span className="font-medium text-pink">Maryam Caillon</span> – Conseillère conjugale & Sexologue
-        </>
-      ),
+      ...baseCampaign1And2.hero,
       ctaSubtitle: "Consultations en visioconférence depuis le confort de votre maison",
       href: "https://calendly.com/maryamcoaching/seance-en-visioconference",
-    },
-    why: {
-      title: (
-        <>
-          Et si faire <span className="italic">renaitre</span>{" "}
-          <span className="font-bold text-pink">l'amour</span> était possible ?
-        </>
-      ),
-      paragraphs: [
-        <>
-          Entre le travail, les enfants, et les contraintes du quotidien, il devient difficile de trouver du temps pour vous.
-        </>,
-        <>
-          L'intimité est devenue inexistante ou mécanique.
-        </>,
-        <>
-          Vous avez l'impression d'être devenus que des "colocataires".
-        </>,
-      ],
-      bullets: [
-        <>
-          <span className="font-bold">Vous ne savez plus comment retrouver votre équilibre à deux.</span> La peur de perdre ce que vous avez construit est bien réelle.
-        </>,
-        <>
-          <span className="font-bold">Vous n'êtes pas seul.e</span>. Surtout, ce n'est pas une fatalité.
-        </>,
-      ],
-    },
-    howToFix: {
-      title: (
-        <>
-          En tant que <span className="italic">conseillère conjugale</span> et{" "}
-          <span className="font-bold text-pink">thérapeute de couple</span>, je
-          vous accompagne à :
-        </>
-      ),
-      description: (
-        <>
-          Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pourrez
-          parler en toute liberté sans craindre le jugement,{" "}
-          <span className="italic text-pink">
-            retrouver confiance en vous et dans votre couple
-          </span>
-          , et poser les bases d'un amour renouvelé.
-        </>
-      ),
     },
   },
 
   campaign2: {
+    ...baseCampaign1And2,
     hero: {
-      title: "Je veux sauver notre couple !",
-      subtitle: (
-        <>
-          Apaisez les tensions et reconstruisez votre relation en quelques séances éteindre avec{" "}
-          <span className="font-medium text-pink">Maryam Caillon</span> – Conseillère conjugale & Sexologue
-        </>
-      ),
+      ...baseCampaign1And2.hero,
       ctaSubtitle: "Consultations en cabinet à Versailles",
       href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
-    },
-    why: {
-      title: (
-        <>
-          Et si faire <span className="italic">renaitre</span>{" "}
-          <span className="font-bold text-pink">l'amour</span> était possible ?
-        </>
-      ),
-      paragraphs: [
-        <>
-          Entre le travail, les enfants, et les contraintes du quotidien, il devient difficile de trouver du temps pour vous.
-        </>,
-        <>
-          L'intimité est devenue inexistante ou mécanique.
-        </>,
-        <>
-          Vous avez l'impression d'être devenus que des "colocataires".
-        </>,
-      ],
-      bullets: [
-        <>
-          <span className="font-bold">Vous ne savez plus comment retrouver votre équilibre à deux.</span> La peur de perdre ce que vous avez construit est bien réelle.
-        </>,
-        <>
-          <span className="font-bold">Vous n'êtes pas seul.e</span>. Surtout, ce n'est pas une fatalité.
-        </>,
-      ],
-    },
-    howToFix: {
-      title: (
-        <>
-          En tant que <span className="italic">conseillère conjugale</span> et{" "}
-          <span className="font-bold text-pink">thérapeute de couple</span>, je
-          vous accompagne à :
-        </>
-      ),
-      description: (
-        <>
-          Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pourrez
-          parler en toute liberté sans craindre le jugement,{" "}
-          <span className="italic text-pink">
-            retrouver confiance en vous et dans votre couple
-          </span>
-          , et poser les bases d'un amour renouvelé.
-        </>
-      ),
     },
   },
 
@@ -188,26 +159,7 @@ export const campaigns = {
         </>,
       ],
     },
-    howToFix: {
-      title: (
-        <>
-          En tant que <span className="italic">sexologue</span> et{" "}
-          <span className="font-bold text-pink">thérapeute de couple</span>, je
-          vous accompagne à :
-        </>
-      ),
-      description: (
-        <>
-          Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pourrez
-          parler en tout liberté sans craindre le jugement,{" "}
-          <span className="italic text-pink">
-            retrouver confiance en vous et dans votre couple
-          </span>
-          , et poser les bases d'un amour renouvelé.
-        </>
-      ),
-    },
+    howToFix: howToFixSexologue,
   },
 
   campaign4: {
@@ -252,25 +204,6 @@ export const campaigns = {
         </>,
       ],
     },
-    howToFix: {
-      title: (
-        <>
-          En tant que <span className="italic">sexologue</span> et{" "}
-          <span className="font-bold text-pink">thérapeute de couple</span>, je
-          vous accompagne à :
-        </>
-      ),
-      description: (
-        <>
-          Mon rôle est de vous offrir{" "}
-          <span className="font-bold">un espace sécurisant</span> où vous pourrez
-          parler en tout liberté sans craindre le jugement,{" "}
-          <span className="italic text-pink">
-            retrouver confiance en vous et dans votre couple
-          </span>
-          , et poser les bases d'un amour renouvelé.
-        </>
-      ),
-    },
+    howToFix: howToFixSexologue,
   },
 } satisfies Record<string, CampaignConfig>;

@@ -11,9 +11,9 @@ export default defineConfig({
     build: {
     rollupOptions: {
       input: {
-        main: './index.html',
         campaign1: './campaigns/campaign1/index.html',
         campaign2: './campaigns/campaign2/index.html',
+        campaign3: './campaigns/campaign3/index.html',
         campaign4: './campaigns/campaign4/index.html',
       }
     }
