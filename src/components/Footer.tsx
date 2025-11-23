@@ -1,7 +1,8 @@
 import { Mail, Bus, Train, Phone, Instagram, Youtube } from "lucide-react";
 import TiktokIcon from "../assets/tik-tok.svg";
+import type { CampaignConfig } from "../config/campaigns";
 
-const Footer = () => {
+const Footer = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
   return (
     <footer className="bg-dark text-white py-12">
       <div className="mx-auto px-8 sm:px-12 md:px-16 max-w-7xl">
@@ -111,8 +112,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-center md:col-start-3 md:text-start">
-                        <a
-              href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
+            <a
+              href={bookingLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-pink text-white text-center px-4 py-2 md:px-3 rounded-full font-bold border-2 border-white hover:bg-white hover:border-pink hover:text-dark transition-colors"

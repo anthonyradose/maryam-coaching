@@ -17,16 +17,17 @@ interface LandingPageProps {
 const LandingPage = ({ config }: LandingPageProps) => {
   return (
     <div>
-      <NavBar />
-      <HeroSection {...config.hero} />
+      <NavBar bookingLink={config.bookingLink} />
+      <HeroSection {...config.hero}   bookingLink={config.bookingLink}
+/>
       <WhySection {...config.why} />
       <HowToFixSection {...config.howToFix} />
       <SellingPointsSection />
       <GoogleReviews />
       <AboutMe />
       <FAQSection />
-      <StickyBookingButton />
-      <Footer />
+      <StickyBookingButton bookingLink={config.bookingLink} />
+      <Footer bookingLink={config.bookingLink} />
     </div>
   );
 };

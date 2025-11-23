@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
+import type { CampaignConfig } from "../config/campaigns";
 
-export const StickyBookingButton = () => {
+export const StickyBookingButton = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
   const heroRef = useRef<HTMLElement | null>(null);
   const footerButtonRef = useRef<HTMLElement | null>(null);
 
@@ -24,7 +25,7 @@ export const StickyBookingButton = () => {
 
   return (
     <motion.a
-      href="https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
+      href={bookingLink}
       target="_blank"
       initial={{ y: 100 }}
       animate={shouldShowButton ? { y: 0 } : { y: 100 }}
