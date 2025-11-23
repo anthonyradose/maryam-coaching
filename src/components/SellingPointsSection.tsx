@@ -19,7 +19,7 @@ const sellingPoints = [
   },
   {
     icon: Heart,
-    title: "Accompagnement humain",
+    title: "Un accompagnement humain",
     description:
       "Réalisé dans la chaleur, le dynamisme et la bienveillance avec un brin d’humour",
   },
@@ -30,12 +30,12 @@ const sellingPoints = [
   },
   {
     icon: Smile,
-    title: "Thérapie dynamique",
-    description: "Un espace participatif et convivial",
+    title: "Une thérapie dynamique",
+    description: "Espace participatif et convivial",
   },
   {
     icon: Shield,
-    title: "Cadre professionnel",
+    title: "Un cadre professionnel",
     description: `Confidentialité et ${yearsOfExperience} ans d’expérience`,
   },
   {

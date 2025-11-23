@@ -79,7 +79,7 @@ const AboutSection = () => {
                 Passionnée par les relations humaines
               </span>
               , j'accompagne les couples à surmonter leurs blocages affectifs,
-              sexuels et émotionnels.
+              sexuels et émotionnels. Grâce à l’apprentissage d’une communication de couple efficace et sereine, qui renforce les liens d’amour de manière durable.
             </p>
 
             <p className="mb-8 leading-[1.8] tracking-wide text-base md:text-lg">
