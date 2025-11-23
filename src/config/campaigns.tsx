@@ -1,11 +1,11 @@
 import React from "react";
 
 export interface CampaignConfig {
+  bookingLink: string;
   hero: {
     title: string;
     subtitle: React.ReactNode;
     ctaSubtitle?: string;
-    href: string;
   };
   why: {
     title: React.ReactNode;
@@ -16,6 +16,7 @@ export interface CampaignConfig {
     title: React.ReactNode;
     description: React.ReactNode;
   };
+
 }
 
 const sharedHowToFixDescription = (
@@ -34,8 +35,8 @@ const howToFixConseillere = {
   title: (
     <>
       En tant que <span className="italic">conseillère conjugale</span> et{" "}
-      <span className="font-bold text-pink">thérapeute de couple</span>, je
-      vous accompagne à :
+      <span className="font-bold text-pink">thérapeute de couple</span>, je vous
+      accompagne à :
     </>
   ),
   description: sharedHowToFixDescription,
@@ -45,8 +46,8 @@ const howToFixSexologue = {
   title: (
     <>
       En tant que <span className="italic">sexologue</span> et{" "}
-      <span className="font-bold text-pink">thérapeute de couple</span>, je
-      vous accompagne à :
+      <span className="font-bold text-pink">thérapeute de couple</span>, je vous
+      accompagne à :
     </>
   ),
   description: sharedHowToFixDescription,
@@ -58,12 +59,13 @@ const baseCampaign1And2 = {
     title: "Je veux sauver notre couple !",
     subtitle: (
       <>
-        Apaisez les tensions et reconstruisez votre relation en quelques séances éteindre avec{" "}
-        <span className="font-medium text-pink">Maryam Caillon</span> – Conseillère conjugale & Sexologue
+        Apaisez les tensions et reconstruisez votre relation en quelques séances
+        avec <span className="font-medium text-pink">Maryam Caillon</span> –
+        Conseillère conjugale & Sexologue
       </>
     ),
   },
-  why: {
+why: {
     title: (
       <>
         Et si faire <span className="italic">renaitre</span>{" "}
@@ -71,22 +73,45 @@ const baseCampaign1And2 = {
       </>
     ),
     paragraphs: [
-      <>
-        Entre le travail, les enfants, et les contraintes du quotidien, il devient difficile de trouver du temps pour vous.
+
+      <>Vous savez que vous vous aimez, mais malgré vos efforts, vous n’y arrivez plus.
+        Au fil du temps, <span className="font-bold">la distance s'est installée</span>, les échanges se sont
+        tendus. La colère, la frustration ou les incompréhensions ont pris le
+        dessus.
       </>,
       <>
-        L'intimité est devenue inexistante ou mécanique.
+        Entre le travail, les enfants, et les contraintes du quotidien, il
+        devient <span className="font-bold">difficile de trouver du temps</span> pour vous.
       </>,
       <>
-        Vous avez l'impression d'être devenus que des "colocataires".
+        L'intimité est devenue{" "}
+        <span className="italic text-pink">inexistante ou mécanique</span>.
+      </>,
+      <>
+        Vous avez l'impression d'être devenus que des{" "}
+        <span className="font-bold">"colocataires"</span>.
       </>,
     ],
     bullets: [
+      <><span className="font-bold">
+  Vous ressentez de la confusion, peut-être de la tristesse,
+</span>
+<span className="italic text-pink">
+  et ne savez plus comment retrouver votre équilibre à deux.
+</span>
+La peur de perdre ce que vous avez construit est <span className="font-bold">bien réelle</span>.</>,
       <>
-        <span className="font-bold">Vous ne savez plus comment retrouver votre équilibre à deux.</span> La peur de perdre ce que vous avez construit est bien réelle.
+        <span className="font-bold">
+          Vous ne savez plus comment retrouver votre équilibre à deux.
+        </span>{" "}
+        La peur de perdre ce que vous avez construit est bien réelle.
       </>,
       <>
-        <span className="font-bold">Vous n'êtes pas seul.e</span>. Surtout, ce n'est pas une fatalité.
+        <span className="font-bold">Vous n'êtes pas seul.e</span>. Comme de
+        nombreux couples avant vous, vous pouvez{" "}
+        <span className="font-bold text-pink">sortir</span> de cette impasse,
+        apaiser les tensions et retrouver le lien, l'amour et la complicité qui
+        vous unissaient.
       </>,
     ],
   },
@@ -98,18 +123,19 @@ export const campaigns = {
     ...baseCampaign1And2,
     hero: {
       ...baseCampaign1And2.hero,
-      ctaSubtitle: "Consultations en visioconférence depuis le confort de votre maison",
-      href: "https://calendly.com/maryamcoaching/seance-en-visioconference",
+      ctaSubtitle:
+        "Consultations en visioconférence depuis le confort de votre maison :",
     },
+    bookingLink: "https://calendly.com/maryamcoaching/consultation-therapie-de-couple-visio-maryam"
   },
 
   campaign2: {
     ...baseCampaign1And2,
     hero: {
       ...baseCampaign1And2.hero,
-      ctaSubtitle: "Consultations en cabinet à Versailles",
-      href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
+      ctaSubtitle: "Consultations en cabinet à Versailles :",
     },
+    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
   },
 
   campaign3: {
@@ -119,10 +145,9 @@ export const campaigns = {
         <>
           Retrouvez complicité, intimité et confiance dès vos premières séances,
           avec <span className="font-medium text-pink">Maryam Caillon</span> –
-          Sexologue et thérapeute de couple à Versailles (et en ligne)
+          Sexologue et thérapeute de couple à Versailles (et en ligne).
         </>
       ),
-      href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
     },
     why: {
       title: (
@@ -155,11 +180,14 @@ export const campaigns = {
         </>,
         <>
           <span className="font-bold">Vous n'êtes pas seul.e</span>. Comme de
-          nombreux couples avant vous, vous pouvez rallumer le feu de la passion et recréer de la complicité pour vivre un amour plus pétillant et plus fort.
+          nombreux couples avant vous, vous pouvez rallumer le feu de la passion
+          et recréer de la complicité pour vivre un amour plus pétillant et plus
+          fort.
         </>,
       ],
     },
     howToFix: howToFixSexologue,
+    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
   },
 
   campaign4: {
@@ -169,41 +197,51 @@ export const campaigns = {
         <>
           Apaisez les tensions et reconstruisez votre relation en quelques
           séances, avec
-          <span className="font-medium text-pink">Maryam Caillon</span> –
+          <span className="font-medium text-pink"> Maryam Caillon</span> –
           Sexologue et thérapeute de couple à Versailles.
         </>
       ),
-      href: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
     },
     why: {
       title: (
         <>
-          Votre<span className="italic"> couple</span> est en{" "}
-          <span className="font-bold text-pink">crise</span>
+          <span className="italic">Comment</span> en est-on{" "}
+          <span className="font-bold text-pink">arrivés</span>{" "}la ?
         </>
       ),
-      paragraphs: [
-        <>
-          Les disputes sont devenues{" "}
-          <span className="font-bold">quotidiennes</span> et épuisantes.
-        </>,
-        <>
-          Vous vous sentez{" "}
-          <span className="italic text-pink">incompris</span> et seul dans votre relation.
-        </>,
-        <>
-          La <span className="font-bold">séparation</span> semble être la seule issue.
-        </>,
-      ],
-      bullets: [
-        <>
-          <span className="font-bold">Il n'est pas trop tard</span>. Même les couples en grande difficulté peuvent retrouver l'harmonie avec le bon accompagnement.
-        </>,
-        <>
-          <span className="font-bold">Vous méritez d'être heureux ensemble</span>. Donnez-vous une chance de reconstruire une relation saine et épanouissante.
-        </>,
-      ],
+    paragraphs: [
+      <>
+        Vous savez que vous vous aimez, mais{" "}
+        <span className="italic text-pink">malgré vos efforts</span>, vous n'y
+        arrivez plus. Au fil du temps, la distance s'est installée, les
+        échanges se sont tendus.
+      </>,
+      <>
+        La colère, la frustration ou les incompréhensions{" "}
+        <span className="font-bold">ont pris</span> le dessus.
+      </>,
+      <>
+        La peur de la confusion et <span className="font-bold">vous ne</span>{" "}
+        savez plus comment retrouver votre équilibre à deux.
+      </>,
+      <>
+        La peur de perdre ce que vous avez construit est{" "}
+        <span className="font-bold">bien réelle</span>.
+      </>,
+    ],
+    bullets: [
+      <>
+        <span className="font-bold">Vous n'êtes pas seul.e</span>.
+      </>,
+      <>
+        Comme de nombreux couples avant vous, vous pouvez{" "}
+        <span className="font-bold text-pink">sortir</span> de cette impasse,
+        apaiser les tensions et retrouver le lien, l'amour et la complicité qui
+        vous unissaient autrefois.
+      </>,
+    ],
     },
     howToFix: howToFixSexologue,
+    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
   },
 } satisfies Record<string, CampaignConfig>;
