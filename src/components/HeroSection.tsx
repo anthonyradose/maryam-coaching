@@ -40,8 +40,18 @@ const HeroSection = ({ title, subtitle, ctaSubtitle,bookingLink }: CampaignConfi
           <div className="relative img-div h-full">
             <img
               className="w-full h-full object-cover"
-              src="/images/maryam-caillon-hero.webp"
+              src="/images/maryam-caillon-hero-1024.webp"
               alt="Maryam Caillon portrait"
+                srcSet="
+    /images/maryam-caillon-hero-300.webp 300w,
+    /images/maryam-caillon-hero-640.webp 640w,
+    /images/maryam-caillon-hero-768.webp 768w,
+    /images/maryam-caillon-hero-1024.webp 1024w,
+    /images/maryam-caillon-hero-1280.webp 1280w,
+    /images/maryam-caillon-hero-1536.webp 1536w,
+    /images/maryam-caillon-hero-1920.webp 1920w
+  "
+sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <svg
               className="absolute lg:hidden top-spacing-neg-7 left-0 w-full h-full pointer-events-none"
