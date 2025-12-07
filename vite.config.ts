@@ -11,10 +11,10 @@ export default defineConfig({
     build: {
     rollupOptions: {
       input: {
-        campaign1: './campaigns/campaign1/index.html',
-        campaign2: './campaigns/campaign2/index.html',
-        campaign3: './campaigns/campaign3/index.html',
-        campaign4: './campaigns/campaign4/index.html',
+        campaign1: './campaign1/index.html',
+        campaign2: './campaign2/index.html',
+        campaign3: './campaign3/index.html',
+        campaign4: './campaign4/index.html',
       }
     }
   }
