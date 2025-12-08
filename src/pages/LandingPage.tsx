@@ -1,13 +1,19 @@
+import React, { Suspense } from "react";
 import NavBar from "../components/NavBar";
-import HeroSection from "../components/HeroSection";
-import SellingPointsSection from "../components/SellingPointsSection";
-import WhySection from "../components/WhySection";
-import HowToFixSection from "../components/HowToFixSection";
-import GoogleReviews from "../components/GoogleReviews";
-import AboutMe from "../components/AboutMe";
-import FAQSection from "../components/FAQSection";
 import { StickyBookingButton } from "../components/StickyBookingButton";
-import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+const WhySection = React.lazy(() => import("../components/WhySection"));
+const HowToFixSection = React.lazy(
+  () => import("../components/HowToFixSection")
+);
+const SellingPointsSection = React.lazy(
+  () => import("../components/SellingPointsSection")
+);
+const GoogleReviews = React.lazy(() => import("../components/GoogleReviews"));
+const AboutMe = React.lazy(() => import("../components/AboutMe"));
+const FAQSection = React.lazy(() => import("../components/FAQSection"));
+const Footer = React.lazy(() => import("../components/Footer"));
+
 import type { CampaignConfig } from "../config/campaigns";
 
 interface LandingPageProps {
@@ -18,16 +24,29 @@ const LandingPage = ({ config }: LandingPageProps) => {
   return (
     <div>
       <NavBar bookingLink={config.bookingLink} />
-      <HeroSection {...config.hero}   bookingLink={config.bookingLink}
-/>
+      <HeroSection {...config.hero} bookingLink={config.bookingLink} />
+      <Suspense fallback={null}>
       <WhySection {...config.why} />
+      </Suspense>
+            <Suspense fallback={null}>
       <HowToFixSection {...config.howToFix} />
+      </Suspense>
+      <Suspense fallback={null}>
       <SellingPointsSection />
+      </Suspense>
+      <Suspense fallback={null}>    
       <GoogleReviews />
+      </Suspense>
+      <Suspense fallback={null}>
       <AboutMe />
+      </Suspense>
+      <Suspense fallback={null}>
       <FAQSection />
+      </Suspense>
       <StickyBookingButton bookingLink={config.bookingLink} />
+      <Suspense fallback={null}>
       <Footer bookingLink={config.bookingLink} />
+      </Suspense>
     </div>
   );
 };
