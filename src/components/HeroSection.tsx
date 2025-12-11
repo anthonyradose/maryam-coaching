@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
 import type { CampaignConfig } from "../config/campaigns";
 
-const HeroSection = ({ title, subtitle, ctaSubtitle,bookingLink }: CampaignConfig['hero'] & Pick<CampaignConfig, 'bookingLink'>) => {
+const HeroSection = ({
+  title,
+  subtitle,
+  ctaSubtitle,
+  bookingLink,
+}: CampaignConfig["hero"] & Pick<CampaignConfig, "bookingLink">) => {
   return (
-    <section className="lg:h-[calc(100vh-7rem)] overflow-hidden" id= "hero-section">
+    <section
+      className="lg:h-[calc(100vh-7rem)] overflow-hidden"
+      id="hero-section"
+    >
       <div className="grid lg:grid-cols-2 items-stretch h-full">
         {/* Left Column */}
         <div className="flex flex-col justify-center items-start px-4 sm:px-8 md:px-12 py-8 sm:py-12 lg:py-0 h-full ml-4">
@@ -25,7 +33,11 @@ const HeroSection = ({ title, subtitle, ctaSubtitle,bookingLink }: CampaignConfi
           )}
 
           {/* CTA Button */}
-          <a className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200" href={bookingLink} target="_blank">
+          <a
+            className="bg-pink text-white px-4 py-2 rounded-4xl font-bold text-base md:text-lg hover:bg-pink/90 transition-colors duration-200"
+            href={bookingLink}
+            target="_blank"
+          >
             Prendre rendez-vous
           </a>
         </div>
@@ -39,10 +51,13 @@ const HeroSection = ({ title, subtitle, ctaSubtitle,bookingLink }: CampaignConfi
         >
           <div className="relative img-div h-full">
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[4/5]"
+              width="1024"
+              height="1280"
+              fetchPriority="high"
               src="/images/maryam-caillon-hero-1024.webp"
               alt="Maryam Caillon portrait"
-                srcSet="
+              srcSet="
     /images/maryam-caillon-hero-300.webp 300w,
     /images/maryam-caillon-hero-640.webp 640w,
     /images/maryam-caillon-hero-768.webp 768w,
@@ -51,7 +66,7 @@ const HeroSection = ({ title, subtitle, ctaSubtitle,bookingLink }: CampaignConfi
     /images/maryam-caillon-hero-1536.webp 1536w,
     /images/maryam-caillon-hero-1920.webp 1920w
   "
-sizes="(min-width: 1024px) 50vw, 100vw"
+              sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <svg
               className="absolute lg:hidden top-spacing-neg-7 left-0 w-full h-full pointer-events-none"
