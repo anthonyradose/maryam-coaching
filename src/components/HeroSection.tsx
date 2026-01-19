@@ -51,20 +51,18 @@ const HeroSection = ({
         >
           <div className="relative img-div h-full">
             <img
-              className="w-full h-full object-cover aspect-[4/5]"
+              className="w-full h-full object-cover "
               width="1024"
               height="1280"
               fetchPriority="high"
               src="/images/maryam-caillon-hero-1024.webp"
               alt="Maryam Caillon portrait"
               srcSet="
-    /images/maryam-caillon-hero-300.webp 300w,
+    /images/maryam-caillon-hero-320.webp 320w,
     /images/maryam-caillon-hero-640.webp 640w,
     /images/maryam-caillon-hero-768.webp 768w,
     /images/maryam-caillon-hero-1024.webp 1024w,
     /images/maryam-caillon-hero-1280.webp 1280w,
-    /images/maryam-caillon-hero-1536.webp 1536w,
-    /images/maryam-caillon-hero-1920.webp 1920w
   "
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
