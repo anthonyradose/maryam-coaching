@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const FAQSection = () => {
@@ -13,36 +13,45 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Quel est le tarif ?",
-      answer: "130€ / heure TTC, en couple. 100€ / heure TTC, en individuel. NB: Les séances individuelles sont possibles dans le cadre d’une thérapie de couple."
+      answer:
+        "130€ / heure TTC, en couple. 100€ / heure TTC, en individuel. NB: Les séances individuelles sont possibles dans le cadre d’une thérapie de couple.",
     },
     {
       question: "Combien de temps dure une séance ?",
-      answer: "60 minutes."
+      answer: "60 minutes.",
     },
     {
       question: "Les consultations en ligne sont-elles efficaces ?",
-      answer: "Oui, elles offrent la même efficacité qu’une consultation en cabinet et permettent davantage de flexibilité."
+      answer:
+        "Oui, elles offrent la même efficacité qu’une consultation en cabinet et permettent davantage de flexibilité.",
     },
     {
       question: "Les consultations sont-elles confidentielles ?",
-      answer: "Absolument, la confidentialité est au cœur de mon approche."
+      answer: "Absolument, la confidentialité est au cœur de mon approche.",
     },
     {
       question: "Comment préparer la première séance ?",
-      answer: "Je vous invite à réfléchir à vos difficultés, besoins et objectifs en amont de votre séance afin de maximiser le temps ensemble."
+      answer:
+        "Je vous invite à réfléchir à vos difficultés, besoins et objectifs en amont de votre séance afin de maximiser le temps ensemble.",
     },
     {
       question: "Que puis-je attendre de notre première séance ?",
-      answer: "Un moment d'échange pour comprendre votre situation, vos attentes et déterminer ensemble les meilleurs axes de travail."
+      answer:
+        "Un moment d'échange pour comprendre votre situation, vos attentes et déterminer ensemble les meilleurs axes de travail.",
     },
     {
-      question: "Comment savoir si nous avons besoin d'une thérapie de couple ?",
-      answer: "Si vous n’arrivez plus à vous comprendre, à communiquer ou que la complicité a disparu alors la thérapie de couple est la bonne solution."
-    }
+      question:
+        "Comment savoir si nous avons besoin d'une thérapie de couple ?",
+      answer:
+        "Si vous n’arrivez plus à vous comprendre, à communiquer ou que la complicité a disparu alors la thérapie de couple est la bonne solution.",
+    },
   ];
 
   return (
-    <section ref={ref} className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden">
+    <section
+      ref={ref}
+      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden"
+    >
       {/* Top blob - curves from top-LEFT across to right (mirrored) */}
       <motion.div
         initial={{ x: "-100%", y: "-50%", opacity: 0 }}
@@ -85,14 +94,18 @@ const FAQSection = () => {
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-normal mb-12 tracking-wider">
-            <span className="italic">Questions</span> <span className="font-bold text-pink">fréquentes</span>
+            <span className="italic">Questions</span>{" "}
+            <span className="font-bold text-pink">fréquentes</span>
           </h2>
         </div>
 
         {/* FAQ Items */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
               <button
                 className="w-full text-left p-6"
                 onClick={() => toggleFAQ(index)}
@@ -104,7 +117,7 @@ const FAQSection = () => {
                   <div className="flex-shrink-0">
                     <svg
                       className={`w-6 h-6 text-pink transform transition-transform duration-200 ${
-                        openFAQ === index ? 'rotate-180' : ''
+                        openFAQ === index ? "rotate-180" : ""
                       }`}
                       fill="none"
                       stroke="currentColor"
@@ -120,10 +133,14 @@ const FAQSection = () => {
                   </div>
                 </div>
               </button>
-         
-              <div className={`overflow-hidden transition-all duration-300 ${
-                openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-              }`}>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  openFAQ === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
                 <div className="px-6 pb-6">
                   <p className="text-base leading-[1.7] tracking-wide">
                     {faq.answer}

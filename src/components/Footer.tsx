@@ -2,7 +2,7 @@ import { Mail, Bus, Train, Phone, Instagram, Youtube } from "lucide-react";
 import TiktokIcon from "../assets/tik-tok.svg";
 import type { CampaignConfig } from "../config/campaigns";
 
-const Footer = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
+const Footer = ({ bookingLink }: Pick<CampaignConfig, "bookingLink">) => {
   return (
     <footer className="bg-dark text-white py-12">
       <div className="mx-auto px-8 sm:px-12 md:px-16 max-w-7xl">
@@ -15,7 +15,9 @@ const Footer = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
               className="h-12 w-auto mx-auto md:mx-0 mb-4"
               loading="lazy"
             />
-            <h2 className="text-lg lg:text-xl font-semibold mb-2">Maryam Caillon</h2>
+            <h2 className="text-lg lg:text-xl font-semibold mb-2">
+              Maryam Caillon
+            </h2>
             <p className="text-sm text-gray-400">
               Sexologue & Thérapeute de couple
             </p>
@@ -71,12 +73,16 @@ const Footer = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
                   className="w-5 h-5 text-pink flex-shrink-0"
                   aria-hidden="true"
                 />
-                <span className="mr-4 md:mr-0">Train : Versailles Rive Droite</span>
+                <span className="mr-4 md:mr-0">
+                  Train : Versailles Rive Droite
+                </span>
               </div>
             </address>
           </div>
           <div className="text-sm leading-relaxed text-center md:text-left">
-            <h3 className="font-semibold mb-3 text-base lg:text-lg">Réseaux sociaux</h3>
+            <h3 className="font-semibold mb-3 text-base lg:text-lg">
+              Réseaux sociaux
+            </h3>
             <div className="flex gap-3 justify-center md:justify-start">
               <a
                 href="https://www.instagram.com/maryam_accompagnante"

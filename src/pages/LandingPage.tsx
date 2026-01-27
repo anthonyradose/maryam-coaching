@@ -26,26 +26,26 @@ const LandingPage = ({ config }: LandingPageProps) => {
       <NavBar bookingLink={config.bookingLink} />
       <HeroSection {...config.hero} bookingLink={config.bookingLink} />
       <Suspense fallback={null}>
-      <WhySection {...config.why} />
-      </Suspense>
-            <Suspense fallback={null}>
-      <HowToFixSection {...config.howToFix} />
+        <WhySection {...config.why} />
       </Suspense>
       <Suspense fallback={null}>
-      <SellingPointsSection />
-      </Suspense>
-      <Suspense fallback={null}>    
-      <GoogleReviews />
+        <HowToFixSection {...config.howToFix} />
       </Suspense>
       <Suspense fallback={null}>
-      <AboutMe />
+        <SellingPointsSection />
       </Suspense>
       <Suspense fallback={null}>
-      <FAQSection />
+        <GoogleReviews />
+      </Suspense>
+      <Suspense fallback={null}>
+        <AboutMe />
+      </Suspense>
+      <Suspense fallback={null}>
+        <FAQSection />
       </Suspense>
       <StickyBookingButton bookingLink={config.bookingLink} />
       <Suspense fallback={null}>
-      <Footer bookingLink={config.bookingLink} />
+        <Footer bookingLink={config.bookingLink} />
       </Suspense>
     </div>
   );

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import type { CampaignConfig } from "../config/campaigns";
 
 // Navigation bar component
-const NavBar = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
+const NavBar = ({ bookingLink }: Pick<CampaignConfig, "bookingLink">) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const NavBar = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
           <div className="flex items-center space-x-4 md:ml-8">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#accueil" className="mr-[2rem">
+              <a href="#accueil">
                 <img
                   src="/temp-logo.svg"
                   alt="Maryam Coaching Logo"

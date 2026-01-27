@@ -2,7 +2,9 @@ import { useEffect, useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import type { CampaignConfig } from "../config/campaigns";
 
-export const StickyBookingButton = ({ bookingLink }: Pick<CampaignConfig, 'bookingLink'>) => {
+export const StickyBookingButton = ({
+  bookingLink,
+}: Pick<CampaignConfig, "bookingLink">) => {
   const heroRef = useRef<HTMLElement | null>(null);
   const footerButtonRef = useRef<HTMLElement | null>(null);
 

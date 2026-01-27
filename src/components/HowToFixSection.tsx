@@ -12,14 +12,17 @@ const benefits = [
   "Construire un couple solide et durable dans la tendresse et l'amour.",
 ];
 
-const HowToFixSection = ({ title, description }: CampaignConfig['howToFix']) => {
+const HowToFixSection = ({
+  title,
+  description,
+}: CampaignConfig["howToFix"]) => {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden" 
+      className="py-16 px-8 sm:px-16 bg-white relative overflow-hidden"
     >
       {/* Top blob - curves from top-LEFT across to right (mirrored) */}
       <motion.div

@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import StarIcon from "../assets/star.svg";
 import type { CampaignConfig } from "../config/campaigns";
 
-const WhySection = ({ title, paragraphs, bullets }: CampaignConfig['why']) => {
+const WhySection = ({ title, paragraphs, bullets }: CampaignConfig["why"]) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -64,7 +64,7 @@ const WhySection = ({ title, paragraphs, bullets }: CampaignConfig['why']) => {
           </div>
         ))}
 
-                <ul className="mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
+        <ul className="mb-8 space-y-8 list-none pl-0 tracking-wide text-base lg:text-lg">
           {bullets.map((bullet, index) => (
             <li key={index} className="leading-[1.7] ">
               <img
@@ -82,4 +82,3 @@ const WhySection = ({ title, paragraphs, bullets }: CampaignConfig['why']) => {
 };
 
 export default WhySection;
-

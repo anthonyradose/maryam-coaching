@@ -16,7 +16,6 @@ export interface CampaignConfig {
     title: React.ReactNode;
     description: React.ReactNode;
   };
-
 }
 
 const sharedHowToFixDescription = (
@@ -65,23 +64,25 @@ const baseCampaign1And2 = {
       </>
     ),
   },
-why: {
+  why: {
     title: (
       <>
-        Et si faire <span className="italic">renaitre</span>{" "}
+        Et si faire <span className="italic">renaître</span>{" "}
         <span className="font-bold text-pink">l'amour</span> était possible ?
       </>
     ),
     paragraphs: [
-
-      <>Vous savez que vous vous aimez, mais malgré vos efforts, vous n’y arrivez plus.
-        Au fil du temps, <span className="font-bold">la distance s'est installée</span>, les échanges se sont
-        tendus. La colère, la frustration ou les incompréhensions ont pris le
-        dessus.
+      <>
+        Vous savez que vous vous aimez, mais malgré vos efforts, vous n’y
+        arrivez plus. Au fil du temps,{" "}
+        <span className="font-bold">la distance s'est installée</span>, les
+        échanges se sont tendus. La colère, la frustration ou les
+        incompréhensions ont pris le dessus.
       </>,
       <>
         Entre le travail, les enfants, et les contraintes du quotidien, il
-        devient <span className="font-bold">difficile de trouver du temps</span> pour vous.
+        devient <span className="font-bold">difficile de trouver du temps</span>{" "}
+        pour vous.
       </>,
       <>
         L'intimité est devenue{" "}
@@ -93,18 +94,16 @@ why: {
       </>,
     ],
     bullets: [
-      <><span className="font-bold">
-  Vous ressentez de la confusion, peut-être de la tristesse,
-</span>
-<span className="italic text-pink">
-  et ne savez plus comment retrouver votre équilibre à deux.
-</span>
-La peur de perdre ce que vous avez construit est <span className="font-bold">bien réelle</span>.</>,
       <>
         <span className="font-bold">
-          Vous ne savez plus comment retrouver votre équilibre à deux.
+          Vous ressentez de la confusion, peut-être de la tristesse,
+        </span>
+        <span className="italic text-pink">
+          {" "}
+          et ne savez plus comment retrouver votre équilibre à deux.
         </span>{" "}
-        La peur de perdre ce que vous avez construit est bien réelle.
+        La peur de perdre ce que vous avez construit est{" "}
+        <span className="font-bold">bien réelle</span>.
       </>,
       <>
         <span className="font-bold">Vous n'êtes pas seul.e</span>. Comme de
@@ -126,7 +125,8 @@ export const campaigns = {
       ctaSubtitle:
         "Consultations en visioconférence depuis le confort de votre maison :",
     },
-    bookingLink: "https://calendly.com/maryamcoaching/consultation-therapie-de-couple-visio-maryam"
+    bookingLink:
+      "https://calendly.com/maryamcoaching/consultation-therapie-de-couple-visio-maryam",
   },
 
   campaign2: {
@@ -135,7 +135,8 @@ export const campaigns = {
       ...baseCampaign1And2.hero,
       ctaSubtitle: "Consultations en cabinet à Versailles :",
     },
-    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles"
+    bookingLink:
+      "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
   },
 
   campaign3: {
@@ -152,10 +153,10 @@ export const campaigns = {
     why: {
       title: (
         <>
-          Je<span className="italic"> veux</span>
-          <span className="font-bold"> retrouver</span>
-          <span className="italic"> notre</span>
-          <span className="font-bold text-pink"> complicité</span> !
+          Je <span className="italic">veux</span>{" "}
+          <span className="font-bold">retrouver</span>{" "}
+          <span className="italic">notre</span>{" "}
+          <span className="font-bold text-pink">complicité</span> !
         </>
       ),
       paragraphs: [
@@ -168,8 +169,8 @@ export const campaigns = {
           <span className="italic text-pink">rares ou insatisfaisants.</span>
         </>,
         <>
-          Parler de ce que vous aimez ou désirez est devenu
-          <span className="font-bold"> mission impossible.</span>
+          Parler de ce que vous aimez ou désirez est devenu{" "}
+          <span className="font-bold">mission impossible.</span>
         </>,
       ],
       bullets: [
@@ -187,7 +188,8 @@ export const campaigns = {
       ],
     },
     howToFix: howToFixSexologue,
-    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
+    bookingLink:
+      "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
   },
 
   campaign4: {
@@ -196,8 +198,8 @@ export const campaigns = {
       subtitle: (
         <>
           Apaisez les tensions et reconstruisez votre relation en quelques
-          séances, avec
-          <span className="font-medium text-pink"> Maryam Caillon</span> –
+          séances, avec{" "}
+          <span className="font-medium text-pink">Maryam Caillon</span> –
           Sexologue et thérapeute de couple à Versailles.
         </>
       ),
@@ -206,42 +208,43 @@ export const campaigns = {
       title: (
         <>
           <span className="italic">Comment</span> en est-on{" "}
-          <span className="font-bold text-pink">arrivés</span>{" "}la ?
+          <span className="font-bold text-pink">arrivés</span> la ?
         </>
       ),
-    paragraphs: [
-      <>
-        Vous savez que vous vous aimez, mais{" "}
-        <span className="italic text-pink">malgré vos efforts</span>, vous n'y
-        arrivez plus. Au fil du temps, la distance s'est installée, les
-        échanges se sont tendus.
-      </>,
-      <>
-        La colère, la frustration ou les incompréhensions{" "}
-        <span className="font-bold">ont pris</span> le dessus.
-      </>,
-      <>
-        La peur de la confusion et <span className="font-bold">vous ne</span>{" "}
-        savez plus comment retrouver votre équilibre à deux.
-      </>,
-      <>
-        La peur de perdre ce que vous avez construit est{" "}
-        <span className="font-bold">bien réelle</span>.
-      </>,
-    ],
-    bullets: [
-      <>
-        <span className="font-bold">Vous n'êtes pas seul.e</span>.
-      </>,
-      <>
-        Comme de nombreux couples avant vous, vous pouvez{" "}
-        <span className="font-bold text-pink">sortir</span> de cette impasse,
-        apaiser les tensions et retrouver le lien, l'amour et la complicité qui
-        vous unissaient autrefois.
-      </>,
-    ],
+      paragraphs: [
+        <>
+          Vous savez que vous vous aimez, mais{" "}
+          <span className="italic text-pink">malgré vos efforts</span>, vous n'y
+          arrivez plus. Au fil du temps, la distance s'est installée, les
+          échanges se sont tendus.
+        </>,
+        <>
+          La colère, la frustration ou les incompréhensions{" "}
+          <span className="font-bold">ont pris</span> le dessus.
+        </>,
+        <>
+          La peur de la confusion et <span className="font-bold">vous ne</span>{" "}
+          savez plus comment retrouver votre équilibre à deux.
+        </>,
+        <>
+          La peur de perdre ce que vous avez construit est{" "}
+          <span className="font-bold">bien réelle</span>.
+        </>,
+      ],
+      bullets: [
+        <>
+          <span className="font-bold">Vous n'êtes pas seul.e</span>.
+        </>,
+        <>
+          Comme de nombreux couples avant vous, vous pouvez{" "}
+          <span className="font-bold text-pink">sortir</span> de cette impasse,
+          apaiser les tensions et retrouver le lien, l'amour et la complicité
+          qui vous unissaient autrefois.
+        </>,
+      ],
     },
     howToFix: howToFixSexologue,
-    bookingLink: "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
+    bookingLink:
+      "https://calendly.com/maryamcoaching/seance-en-cabinet-versailles",
   },
 } satisfies Record<string, CampaignConfig>;
