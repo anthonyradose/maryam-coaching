@@ -14,11 +14,11 @@ const FAQSection = () => {
     {
       question: "Quel est le tarif ?",
       answer:
-        "130€ / heure TTC, en couple. 100€ / heure TTC, en individuel. NB: Les séances individuelles sont possibles dans le cadre d’une thérapie de couple.",
+        "140€ / heure TTC, en couple. 110€ / heure TTC, en individuel. NB: Les séances individuelles sont possibles dans le cadre d’une thérapie de couple.",
     },
     {
       question: "Combien de temps dure une séance ?",
-      answer: "60 minutes.",
+      answer: "Une séance de thérapie dure 60 minutes.",
     },
     {
       question: "Les consultations en ligne sont-elles efficaces ?",
