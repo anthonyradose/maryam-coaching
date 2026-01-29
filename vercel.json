@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    { 
+      "source": "/conseillere-conjugale-en-ligne", 
+      "destination": "/campaign1/index.html" 
+    },
+    { 
+      "source": "/conseillere-conjugale-versailles", 
+      "destination": "/campaign2/index.html" 
+    },
+    { 
+      "source": "/ravivez-la-flamme-dans-votre-couple", 
+      "destination": "/campaign3/index.html" 
+    },
+    { 
+      "source": "/je-veux-sauver-notre-couple", 
+      "destination": "/campaign4/index.html" 
+    }
+  ]
+}
