@@ -49,7 +49,7 @@ const NavBar = ({ bookingLink }: Pick<CampaignConfig, "bookingLink">) => {
             <div className="flex-shrink-0">
               <a href="#accueil">
                 <img
-                  src="/temp-logo.svg"
+                  src="/images/temp-logo.svg"
                   alt="Maryam Coaching Logo"
                   className="h-10 w-auto max-h-12 object-contain drop-shadow-sm"
                 />

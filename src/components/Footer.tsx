@@ -10,7 +10,7 @@ const Footer = ({ bookingLink }: Pick<CampaignConfig, "bookingLink">) => {
           {/* Logo & Description */}
           <div className="text-center md:text-left">
             <img
-              src="/temp-logo.svg"
+              src="/images/temp-logo.svg"
               alt="Maryam Coaching Logo"
               className="h-12 w-auto mx-auto md:mx-0 mb-4"
               loading="lazy"
