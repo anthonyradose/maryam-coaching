@@ -94,8 +94,20 @@ const AboutSection = () => {
               l'envie de vous aider à bâtir un couple plus fort.
             </p>
 
-            {/* Certification badge */}
+            {/* Certifications */}
             <div className="flex items-center gap-3 mt-6 p-4 ">
+              <img
+                src={Diploma}
+                alt=""
+                role="presentation"
+                className="w-8 h-8 flex-shrink-0"
+              />
+              <p className="text-sm md:text-base font-medium text-gray-700">
+                Diplôme Universitaire Européen “Couple et Sexualité" – Université
+                Européenne : Miguel de Cervantes de Valladolid
+              </p>
+            </div>
+            <div className="flex items-center gap-3 p-4 ">
               <img
                 src={Diploma}
                 alt=""
