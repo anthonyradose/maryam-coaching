@@ -13,13 +13,45 @@ A React + TypeScript landing page project for Maryam Caillon, built to promote c
 
 ## Overview
 
+Four independently routable marketing pages sharing a single React codebase, TypeScript for type safety, and Tailwind for styling. Each campaign has unique content and booking links, all configured centrally in `src/config/campaigns.tsx`. Google Reviews are pulled dynamically from a WordPress endpoint and displayed in a Swiper carousel. Built with Vite for fast development and production builds targeting Vercel.
+
 ## Campaigns
 
 ## Features
 
 ## Tech Stack
 
+| Technology | Version | Purpose |
+| --- | --- | --- |
+| React | 19.1.1 | UI framework |
+| TypeScript | 5.6.2 | Type-safe JavaScript |
+| Vite | 7.1.2 | Build tool and dev server |
+| Tailwind CSS | 4.1.13 | Utility-first styling |
+| Framer Motion | 12.23.25 | Animation library |
+| Swiper | 12.0.2 | Carousel component |
+| Lucide React | 0.544.0 | Icon library |
+
 ## Project Structure
+
+```text
+maryam-coaching/
+├── campaign1/                 # Campaign HTML entry points (one per campaign)
+├── campaign2/
+├── campaign3/
+├── campaign4/
+├── src/
+│   ├── campaigns/            # Campaign-specific root components
+│   ├── components/           # Shared UI components
+│   ├── config/               # Centralized campaign content and config
+│   ├── pages/
+│   ├── App.tsx
+│   └── main.tsx
+├── public/                   # Static assets
+├── wordpress-plugin/         # WordPress plugin for Google Reviews API
+├── vite.config.ts
+├── vercel.json
+└── package.json
+```
 
 ## Installation
 
