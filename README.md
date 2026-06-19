@@ -9,27 +9,21 @@ A React + TypeScript landing page project for Maryam Caillon, built to promote c
 
 ![Maryam Coaching](./public/images/maryam-caillon-preview.webp)
 
-## Table of Contents
-
 ## Overview
 
 Four independently routable marketing pages sharing a single React codebase, TypeScript for type safety, and Tailwind for styling. Each campaign has unique content and booking links, all configured centrally in `src/config/campaigns.tsx`. Google Reviews are pulled dynamically from a WordPress endpoint and displayed in a Swiper carousel. Built with Vite for fast development and production builds targeting Vercel.
 
-## Campaigns
-
-## Features
-
 ## Tech Stack
 
-| Technology | Version | Purpose |
-| --- | --- | --- |
-| React | 19.1.1 | UI framework |
-| TypeScript | 5.6.2 | Type-safe JavaScript |
-| Vite | 7.1.2 | Build tool and dev server |
-| Tailwind CSS | 4.1.13 | Utility-first styling |
-| Framer Motion | 12.23.25 | Animation library |
-| Swiper | 12.0.2 | Carousel component |
-| Lucide React | 0.544.0 | Icon library |
+| Technology | Purpose |
+| --- | --- |
+| React | UI framework |
+| TypeScript | Type-safe JavaScript |
+| Vite | Build tool and dev server |
+| Tailwind CSS | Utility-first styling |
+| Framer Motion | Animation library |
+| Swiper | Carousel component |
+| Lucide React | Icon library |
 
 ## Project Structure
 
@@ -55,9 +49,39 @@ maryam-coaching/
 
 ## Installation
 
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/anthonyradose/maryam-coaching.git
+cd maryam-coaching
+npm install
+```
+
 ## Local Development
 
-## Configuration
+Start the development server:
+
+```bash
+npm run dev
+```
+
+To build all four campaign bundles:
+
+```bash
+npm run build
+```
+
+`npm run build` runs `tsc -b && vite build` — type-checks then bundles each campaign into `dist/`.
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+This project uses a multi-entry Vite build to generate four independent campaign bundles, each deployed as a separate single-page application. All campaigns deploy together to a single Vercel project, with each campaign corresponding to a unique marketing route.
 
 ### Vercel Rewrites
 
@@ -86,12 +110,7 @@ Each campaign has a unique marketing route defined in `vercel.json`:
 }
 ```
 
-**To add a new route:**
-
-1. Add a new rewrite object to the `rewrites` array
-2. Set `source` to the marketing URL path
-3. Set `destination` to the campaign bundle path (`/campaignX/index.html`)
-4. Commit and push to trigger auto-deploy
+To add a new route, add a new rewrite object to the `rewrites` array, set `source` to the marketing URL path and `destination` to the campaign bundle path (`/campaignX/index.html`), then commit and push to trigger auto-deploy.
 
 ### Campaign Configuration
 
@@ -108,72 +127,4 @@ export const campaigns = {
 };
 ```
 
-**To update booking links:**
-
-1. Open `src/config/campaigns.tsx`
-2. Update the `bookingLink` URL for the desired campaign
-3. Commit and push to trigger auto-deploy
-
-**To update campaign content:**
-
-1. Edit the corresponding campaign object in `src/config/campaigns.tsx` (hero title/subtitle, why section, how-to-fix section)
-2. Commit and push to trigger auto-deploy
-
-## Deployment
-
-This project uses a multi-entry Vite build to generate four independent campaign bundles, each deployed as a separate single-page application. All campaigns deploy together to a single Vercel project, with each campaign corresponding to a unique marketing route.
-
-### Vite Configuration
-
-- **Vite** bundles each campaign as a separate entry point defined in `vite.config.ts`
-- The `vite.config.ts` file contains a `build.rollupOptions.input` object that maps each campaign to its HTML entry file
-- Each campaign bundle is self-contained and includes only the code needed for that specific landing page
-
-### Campaign HTML Entrypoints
-
-The following HTML files serve as the entry points for each campaign:
-
-```text
-campaign1/index.html
-campaign2/index.html
-campaign3/index.html
-campaign4/index.html
-```
-
-Each file mounts the React app with its corresponding campaign configuration from `src/campaigns/`.
-
-### Build Process
-
-Run the build command to generate all four campaign bundles:
-
-```bash
-npm run build
-```
-
-This command executes `tsc -b && vite build`, which:
-
-- Compiles TypeScript to JavaScript (`tsc -b`)
-- Bundles each campaign entry point into a separate output directory using Vite (`vite build`)
-
-### Output Bundles
-
-After running `npm run build`, Vite generates four separate campaign bundles in the `dist/` directory:
-
-- `dist/campaign1/` — compiled bundle for Campaign 1
-- `dist/campaign2/` — compiled bundle for Campaign 2
-- `dist/campaign3/` — compiled bundle for Campaign 3
-- `dist/campaign4/` — compiled bundle for Campaign 4
-
-For deployment to production, use **Vercel**. See the Configuration section for how Vercel routes map to these campaign bundles.
-
-## Usage
-
-## Testing & Validation
-
-## Known Issues
-
-## Future Improvements
-
-## Credits & Acknowledgements
-
-## License
+To update booking links or campaign content, edit the corresponding campaign object in `src/config/campaigns.tsx` and commit and push to trigger auto-deploy.
