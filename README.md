@@ -128,3 +128,7 @@ export const campaigns = {
 ```
 
 To update booking links or campaign content, edit the corresponding campaign object in `src/config/campaigns.tsx` and commit and push to trigger auto-deploy.
+
+## License
+
+Copyright (c) 2025 Anthony Radose. All rights reserved. Unauthorized copying, modification, or distribution is strictly prohibited.
