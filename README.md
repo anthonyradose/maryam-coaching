@@ -49,8 +49,6 @@ maryam-coaching/
 │   ├── components/           # Shared UI components
 │   ├── config/               # Centralized campaign content and config
 │   ├── pages/
-│   ├── App.tsx
-│   └── main.tsx
 ├── public/                   # Static assets
 ├── wordpress-plugin/         # WordPress plugin for Google Reviews API
 ├── vite.config.ts
